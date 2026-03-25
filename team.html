@@ -1,1016 +1,869 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nossa Equipe - DG Arquitetos</title>
 
-    <link rel="preload" as="style" href="css/style.css?v=3.1" />
-    <link rel="preload" as="image" href="img/Icone/Icone.webp" />
-    <link
-      rel="preload"
-      as="image"
-      href="img/Icone/IconeComNomeFundoBranco.webp"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossa Equipe - DG Arquitetos</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preload" as="style" href="css/style.css?v=3.1" />
+  <link rel="preload" as="image" href="img/Icone/Icone.webp" />
+  <link rel="preload" as="image" href="img/Icone/IconeComNomeFundoBranco.webp" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/style.css?v=3.1" />
-    <link rel="icon" href="img/Icone/Icone200px.webp" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <style>
-      /* Ajustes específicos para garantir que nada quebre no Mobile */
-      .values-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        margin-bottom: 60px;
-        padding: 0 20px;
+  <link rel="stylesheet" href="css/style.css?v=3.1" />
+  <link rel="icon" href="img/Icone/Icone200px.webp" />
+
+  <style>
+    /* Ajustes específicos para garantir que nada quebre no Mobile */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+      padding: 0 20px;
+    }
+
+    .team-hero-section {
+      width: 100%;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    .team-hero-section img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 600px;
+      margin: 60px auto;
+      align-items: center;
+    }
+
+    .stats-card {
+      background: linear-gradient(135deg,
+          rgba(0, 0, 0, 0.03),
+          rgba(0, 0, 0, 0.08));
+      padding: 40px;
+      border-radius: 12px;
+      border-left: 4px solid #1a1a1a;
+      transition: all 0.4s ease;
+    }
+
+    .stats-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .stats-number {
+      font-family: "Playfair Display", serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    .stats-label {
+      font-size: 14px;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        gap: 40px !important;
       }
 
-      .team-hero-section {
-        width: 100%;
-        padding: 60px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #fff;
+      .team-info-section {
+        padding: 40px 20px !important;
       }
 
-      .team-hero-section img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
+      .team-info-section h2 {
+        font-size: 32px !important;
+      }
+
+      .tech-mockups-section h3 {
+        font-size: 26px !important;
+      }
+
+      .tech-mockups-section h4 {
+        font-size: 22px !important;
       }
 
       .stats-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        max-width: 600px;
-        margin: 60px auto;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 25px;
       }
+    }
 
-      .stats-card {
-        background: linear-gradient(
-          135deg,
-          rgba(0, 0, 0, 0.03),
-          rgba(0, 0, 0, 0.08)
-        );
-        padding: 40px;
-        border-radius: 12px;
-        border-left: 4px solid #1a1a1a;
-        transition: all 0.4s ease;
+    @media (max-width: 1024px) {
+      .tech-grid {
+        grid-template-columns: 1fr !important;
       }
+    }
+  </style>
+</head>
 
-      .stats-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
-      }
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <a href="index.html" class="header-logo">
+        <img src="img/Icone/Icone.webp" alt="DG Arquitetos" height="52" width="auto" decoding="async" />
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu de navegação">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </button>
+    </div>
+  </header>
 
-      .stats-number {
-        font-family: "Playfair Display", serif;
-        font-size: 48px;
-        font-weight: 700;
-        color: #1a1a1a;
-        margin-bottom: 10px;
-      }
+  <div class="menu-overlay" id="menuOverlay"></div>
 
-      .stats-label {
-        font-size: 14px;
-        color: #888;
-        letter-spacing: 1px;
-      }
+  <nav class="nav-menu" id="navMenu">
+    <a href="index.html#projects" class="nav-item">Projetos</a>
+    <a href="team.html" class="nav-item">Sobre Nós</a>
+    <a href="team.html#contato" class="nav-item">Contato</a>
+  </nav>
 
-      @media (max-width: 768px) {
-        .contact-container {
-          gap: 40px !important;
-        }
+  <section class="team-hero-section" data-aos="fade-up">
+    <img src="img/Icone/IconeComNomeFundoBranco.webp" alt="Equipe DG Arquitetos" decoding="async" />
+  </section>
 
-        .team-info-section {
-          padding: 40px 20px !important;
-        }
-
-        .team-info-section h2 {
-          font-size: 32px !important;
-        }
-
-        .tech-mockups-section h3 {
-          font-size: 26px !important;
-        }
-
-        .tech-mockups-section h4 {
-          font-size: 22px !important;
-        }
-
-        .stats-grid {
-          grid-template-columns: 1fr;
-          gap: 25px;
-        }
-      }
-
-      @media (max-width: 1024px) {
-        .tech-grid {
-          grid-template-columns: 1fr !important;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <header class="main-header">
-      <div class="header-content">
-        <a href="index.html" class="header-logo">
-          <img
-            src="img/Icone/Icone.webp"
-            alt="DG Arquitetos"
-            height="52"
-            width="auto"
-            decoding="async"
-          />
-        </a>
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-label="Menu de navegação"
-        >
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </button>
-      </div>
-    </header>
-
-    <div class="menu-overlay" id="menuOverlay"></div>
-
-    <nav class="nav-menu" id="navMenu">
-      <a href="index.html#projects" class="nav-item">Projetos</a>
-      <a href="team.html" class="nav-item">Sobre Nós</a>
-      <a href="team.html#contato" class="nav-item">Contato</a>
-    </nav>
-
-    <section class="team-hero-section" data-aos="fade-up">
-      <img
-        src="img/Icone/IconeComNomeFundoBranco.webp"
-        alt="Equipe DG Arquitetos"
-        decoding="async"
-      />
-    </section>
-
-    <section
-      class="team-info-section"
-      data-aos="fade-up"
-      style="
+  <section class="team-info-section" data-aos="fade-up" style="
         max-width: 1000px;
         margin: 0 auto;
         padding: 60px 40px;
         text-align: center;
-      "
-    >
-      <h2
-        style="
+      ">
+    <h2 style="
           font-family: &quot;Playfair Display&quot;, serif;
           font-size: 42px;
           margin-bottom: 50px;
-        "
-      >
-        Sobre Nós
-      </h2>
+        ">
+      Sobre Nós
+    </h2>
 
-      <!-- Imagem AboutUs com efeito -->
-      <div
-        style="
+    <!-- Imagem AboutUs com efeito -->
+    <div style="
           max-width: 600px;
           margin: 0 auto 60px;
           border-radius: 8px;
           overflow: hidden;
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        "
-        data-aos="zoom-in"
-      >
-        <img
-          src="TeamPage/AboutUs/Img-AbouUs3.webp"
-          alt="Nossa Equipe"
-          style="
+        " data-aos="zoom-in">
+      <img src="TeamPage/AboutUs/Img-AbouUs3.webp" alt="Nossa Equipe" style="
             width: 100%;
             height: auto;
             display: block;
             transition: transform 0.6s ease;
-          "
-        />
-      </div>
+          " />
+    </div>
 
-      <div
-        style="
+    <div style="
           max-width: 800px;
           margin: 0 auto 50px;
           color: #555;
           line-height: 1.8;
-        "
-      >
-        <p style="margin-bottom: 20px; font-size: 15px">
-          Profissionais experientes dedicados à excelência em cada projeto.
-          Criamos arquitetura que reflete forma, função e humanidade.
-        </p>
-      </div>
+        ">
+      <p style="margin-bottom: 20px; font-size: 15px">
+        Profissionais experientes dedicados à excelência em cada projeto.
+        Criamos arquitetura que reflete forma, função e humanidade.
+      </p>
+    </div>
 
-      <!-- Seção de Dados com Efeito -->
-      <div class="stats-grid">
-        <div class="stats-card">
-          <div class="stats-number">8 Anos</div>
-          <p class="stats-label">TEMPO DE ATUAÇÃO</p>
-        </div>
-        <div class="stats-card">
-          <div class="stats-number">300+</div>
-          <p class="stats-label">PROJETOS PELO BRASIL</p>
-        </div>
+    <!-- Seção de Dados com Efeito -->
+    <div class="stats-grid">
+      <div class="stats-card">
+        <div class="stats-number">8 Anos</div>
+        <p class="stats-label">TEMPO DE ATUAÇÃO</p>
       </div>
+      <div class="stats-card">
+        <div class="stats-number">300+</div>
+        <p class="stats-label">PROJETOS PELO BRASIL</p>
+      </div>
+    </div>
 
-      <h3
-        style="
+    <h3 style="
           margin-top: 60px;
           margin-bottom: 40px;
           font-family: &quot;Playfair Display&quot;, serif;
           font-size: 32px;
           font-weight: 500;
-        "
-      >
-        Valores
-      </h3>
+        ">
+      Valores
+    </h3>
 
-      <div class="values-grid">
-        <div>
-          <h4
-            style="
+    <div class="values-grid">
+      <div>
+        <h4 style="
               font-family: &quot;Playfair Display&quot;, serif;
               font-size: 20px;
               margin-bottom: 15px;
-            "
-          >
-            Excelência
-          </h4>
-          <p style="font-size: 14px; color: #888">
-            Qualidade em cada detalhe, da concepção à entrega.
-          </p>
-        </div>
-        <div>
-          <h4
-            style="
-              font-family: &quot;Playfair Display&quot;, serif;
-              font-size: 20px;
-              margin-bottom: 15px;
-            "
-          >
-            Inovação
-          </h4>
-          <p style="font-size: 14px; color: #888">
-            Novas formas de pensar o espaço e design moderno.
-          </p>
-        </div>
-        <div>
-          <h4
-            style="
-              font-family: &quot;Playfair Display&quot;, serif;
-              font-size: 20px;
-              margin-bottom: 15px;
-            "
-          >
-            Sustentabilidade
-          </h4>
-          <p style="font-size: 14px; color: #888">
-            Responsabilidade ambiental em cada projeto.
-          </p>
-        </div>
+            ">
+          Excelência
+        </h4>
+        <p style="font-size: 14px; color: #888">
+          Qualidade em cada detalhe, da concepção à entrega.
+        </p>
       </div>
-    </section>
+      <div>
+        <h4 style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 20px;
+              margin-bottom: 15px;
+            ">
+          Inovação
+        </h4>
+        <p style="font-size: 14px; color: #888">
+          Novas formas de pensar o espaço e design moderno.
+        </p>
+      </div>
+      <div>
+        <h4 style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 20px;
+              margin-bottom: 15px;
+            ">
+          Sustentabilidade
+        </h4>
+        <p style="font-size: 14px; color: #888">
+          Responsabilidade ambiental em cada projeto.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Seção de Portfólio e Tecnologia -->
-    <section
-      class="tech-mockups-section"
-      data-aos="fade-up"
-      style="padding: 80px 20px; background: #f9f9f9"
-    >
-      <div style="max-width: 1200px; margin: 0 auto">
-        <h3
-          style="
+  <!-- Seção de Portfólio e Tecnologia -->
+  <section class="tech-mockups-section" data-aos="fade-up" style="padding: 80px 20px; background: #f9f9f9">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <h3 style="
             margin-bottom: 60px;
             font-family: &quot;Playfair Display&quot;, serif;
             font-size: 32px;
             font-weight: 500;
             text-align: center;
-          "
-        >
-          Nossa Abordagem
-        </h3>
+          ">
+        Nossa Abordagem
+      </h3>
 
-        <div
-          style="
+      <div style="
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
             margin-bottom: 60px;
-          "
-          class="tech-grid"
-        >
-          <!-- Galeria AboutUs -->
-          <div data-aos="fade-right">
-            <div
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px"
-            >
-              <div
-                style="
+          " class="tech-grid">
+        <!-- Galeria AboutUs -->
+        <div data-aos="fade-right">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px">
+            <div style="
                   border-radius: 8px;
                   overflow: hidden;
                   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-                "
-              >
-                <img
-                  src="TeamPage/AboutUs/Img-AbouUs1.webp"
-                  alt="Projeto 1"
-                  style="
+                ">
+              <img src="TeamPage/AboutUs/Img-AbouUs1.webp" alt="Projeto 1" style="
                     width: 100%;
                     height: 400px;
                     object-fit: cover;
                     display: block;
-                  "
-                />
-              </div>
-              <div
-                style="
+                  " />
+            </div>
+            <div style="
                   border-radius: 8px;
                   overflow: hidden;
                   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-                "
-              >
-                <img
-                  src="TeamPage/AboutUs/Img-AbouUs2.webp"
-                  alt="Projeto 2"
-                  style="
+                ">
+              <img src="TeamPage/AboutUs/Img-AbouUs2.webp" alt="Projeto 2" style="
                     width: 100%;
                     height: 400px;
                     object-fit: cover;
                     display: block;
-                  "
-                />
-              </div>
-              <div
-                style="
+                  " />
+            </div>
+            <div style="
                   border-radius: 8px;
                   overflow: hidden;
                   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
                   grid-column: 1 / -1;
-                "
-              >
-                <img
-                  src="TeamPage/AboutUs/Img-AbouUs4.webp"
-                  alt="Projeto 3"
-                  style="
+                ">
+              <img src="TeamPage/AboutUs/Img-AbouUs4.webp" alt="Projeto 3" style="
                     width: 100%;
                     height: 300px;
                     object-fit: cover;
                     display: block;
-                  "
-                />
-              </div>
+                  " />
             </div>
           </div>
+        </div>
 
-          <!-- Texto e Informações -->
-          <div data-aos="fade-left">
-            <h4
-              style="
+        <!-- Texto e Informações -->
+        <div data-aos="fade-left">
+          <h4 style="
                 font-family: &quot;Playfair Display&quot;, serif;
                 font-size: 28px;
                 margin-bottom: 25px;
                 line-height: 1.3;
-              "
-            >
-              Qualidade em cada detalhe
-            </h4>
-            <p
-              style="
+              ">
+            Qualidade em cada detalhe
+          </h4>
+          <p style="
                 color: #666;
                 line-height: 1.8;
                 margin-bottom: 25px;
                 font-size: 15px;
-              "
-            >
-              Cada projeto é resultado de pesquisa, criatividade e rigor
-              técnico. Transformamos visões em realidades que inspiram e
-              funcionam perfeitamente.
-            </p>
+              ">
+            Cada projeto é resultado de pesquisa, criatividade e rigor
+            técnico. Transformamos visões em realidades que inspiram e
+            funcionam perfeitamente.
+          </p>
 
-            <div
-              style="
+          <div style="
                 background: white;
                 padding: 25px;
                 border-radius: 8px;
                 border-left: 4px solid #1a1a1a;
                 margin-bottom: 20px;
-              "
-            >
-              <p style="color: #555; font-size: 14px; line-height: 1.8">
-                ✓ Design sofisticado<br />
-                ✓ Escuta ativa do cliente<br />
-                ✓ Execução impeccável<br />
-                ✓ Relacionamento duradouro
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Seção de Vídeos/Animações -->
-
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-          "
-        >
-          <!-- Vídeo 1 -->
-          <div
-            style="
-              border-radius: 8px;
-              overflow: hidden;
-              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            "
-            data-aos="zoom-in"
-          >
-            <video
-              src="TeamPage/AboutUs/Anim-Abouus1.mp4"
-              style="
-                width: 100%;
-                height: 280px;
-                object-fit: cover;
-                display: block;
-                pointer-events: none;
-              "
-              autoplay
-              muted
-              loop
-              playsinline
-              webkit-playsinline
-              preload="metadata"
-            ></video>
-          </div>
-
-          <!-- Vídeo 2 -->
-          <div
-            style="
-              border-radius: 8px;
-              overflow: hidden;
-              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            "
-            data-aos="zoom-in"
-          >
-            <video
-              src="TeamPage/AboutUs/Anim-Abouus2.mp4"
-              style="
-                width: 100%;
-                height: 280px;
-                object-fit: cover;
-                display: block;
-                pointer-events: none;
-              "
-              autoplay
-              muted
-              loop
-              playsinline
-              webkit-playsinline
-              preload="metadata"
-            ></video>
-          </div>
-
-          <!-- Vídeo 3 -->
-          <div
-            style="
-              border-radius: 8px;
-              overflow: hidden;
-              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            "
-            data-aos="zoom-in"
-          >
-            <video
-              src="TeamPage/AboutUs/Anim-Abouus3.mp4"
-              style="
-                width: 100%;
-                height: 280px;
-                object-fit: cover;
-                display: block;
-                pointer-events: none;
-              "
-              autoplay
-              muted
-              loop
-              playsinline
-              webkit-playsinline
-              preload="metadata"
-            ></video>
-          </div>
-        </div>
-
-        <!-- Card Óculos VR -->
-        <div class="tech-card" style="margin-top: 80px">
-          <h4
-            style="
-              font-family: &quot;Playfair Display&quot;, serif;
-              font-size: 26px;
-              margin-bottom: 20px;
-              text-align: center;
-            "
-          >
-            Visualização VR
-          </h4>
-
-          <p
-            id="vr-description"
-            style="
-              color: #555;
-              line-height: 1.8;
-              font-size: 15px;
-              text-align: center;
-              margin-bottom: 30px;
-            "
-          >
-            Explore projetos em realidade virtual com imersão total em 3D.
-          </p>
-
-          <div
-            style="
-              display: grid;
-              grid-template-columns: 1fr;
-              gap: 10px;
-              margin-bottom: 30px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            <div
-              style="
-                position: relative;
-                aspect-ratio: 1 / 1;
-                background: #f5f5f5;
-                border-radius: 8px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <video
-                id="vr-video-1"
-                src="TeamPage/Anim-Vr1.mp4"
-                style="width: 100%; height: 100%; object-fit: cover"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-
-            <div
-              style="
-                position: relative;
-                aspect-ratio: 1 / 1;
-                background: #f5f5f5;
-                border-radius: 8px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <video
-                id="vr-video-2"
-                src="TeamPage/Anim-Vr2.mp4"
-                style="width: 100%; height: 100%; object-fit: cover"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-
-            <div
-              style="
-                position: relative;
-                aspect-ratio: 1 / 1;
-                background: #f5f5f5;
-                border-radius: 8px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <video
-                id="vr-video-3"
-                src="TeamPage/Anim-Vr3.mp4"
-                style="width: 100%; height: 100%; object-fit: cover"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-          </div>
-        </div>
-        <div class="tech-card" style="margin-top: 60px">
-          <h4
-            style="
-              font-family: &quot;Playfair Display&quot;, serif;
-              font-size: 26px;
-              margin-bottom: 20px;
-              text-align: center;
-            "
-          >
-            Maquetes Impressas 3D
-          </h4>
-
-          <p
-            id="mockup-description"
-            style="
-              color: #555;
-              line-height: 1.8;
-              font-size: 15px;
-              text-align: center;
-              margin-bottom: 30px;
-            "
-          >
-            Maquetes físicas detalhadas para visualizar projetos com precisão.
-          </p>
-
-          <div
-            style="
-              display: grid;
-              grid-template-columns: 1fr;
-              gap: 10px;
-              margin-bottom: 30px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            <div
-              style="
-                position: relative;
-                aspect-ratio: 1 / 1;
-                background: #f5f5f5;
-                border-radius: 8px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <video
-                id="maquete-video-1"
-                src="TeamPage/Anim-Maquete1.mp4"
-                alt="Maquete 1"
-                style="width: 100%; height: 100%; object-fit: cover"
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-
-            <div
-              style="
-                position: relative;
-                aspect-ratio: 1 / 1;
-                background: #f5f5f5;
-                border-radius: 8px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <img
-                id="mockup-image-2"
-                src="img/Projetos/Sandra-Cristian/Maquete/MAQ_Sandra04.webp"
-                alt="Maquete 2"
-                style="width: 100%; height: 100%; object-fit: cover"
-              />
-            </div>
-
-            <div
-              style="
-                position: relative;
-                aspect-ratio: 1 / 1;
-                background: #f5f5f5;
-                border-radius: 8px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <img
-                id="mockup-image-3"
-                src="img/Projetos/Graciano/Maquete/MAQ_Graciano02.webp"
-                alt="Maquete 3"
-                style="width: 100%; height: 100%; object-fit: cover"
-              />
-            </div>
+              ">
+            <p style="color: #555; font-size: 14px; line-height: 1.8">
+              ✓ Design sofisticado<br />
+              ✓ Escuta ativa do cliente<br />
+              ✓ Execução impeccável<br />
+              ✓ Relacionamento duradouro
+            </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Aba - Nossa Cultura -->
-    <section
-      class="culture-section"
-      data-aos="fade-up"
-      style="padding: 80px 20px; background: #fff; border-top: 1px solid #eee"
-    >
-      <div style="max-width: 1200px; margin: 0 auto">
-        <div style="text-align: center; margin-bottom: 60px">
-          <h3
-            style="
+      <!-- Seção de Vídeos/Animações -->
+
+      <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+          ">
+        <!-- Vídeo 1 -->
+        <div style="
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            " data-aos="zoom-in">
+          <video src="TeamPage/AboutUs/Anim-Abouus1.mp4" style="
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                display: block;
+                pointer-events: none;
+              " autoplay muted loop playsinline></video>
+        </div>
+
+        <!-- Vídeo 2 -->
+        <div style="
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            " data-aos="zoom-in">
+          <video src="TeamPage/AboutUs/Anim-Abouus2.mp4" style="
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                display: block;
+                pointer-events: none;
+              " autoplay muted loop playsinline></video>
+        </div>
+
+        <!-- Vídeo 3 -->
+        <div style="
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            " data-aos="zoom-in">
+          <video src="TeamPage/AboutUs/Anim-Abouus3.mp4" style="
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                display: block;
+              " autoplay muted loop playsinline></video>
+        </div>
+      </div>
+
+      <!-- Card Óculos VR -->
+      <div class="tech-card" style="margin-top: 80px">
+        <h4 style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 26px;
+              margin-bottom: 20px;
+              text-align: center;
+            ">
+          Visualização VR
+        </h4>
+
+        <p id="vr-description" style="
+              color: #555;
+              line-height: 1.8;
+              font-size: 15px;
+              text-align: center;
+              margin-bottom: 30px;
+            ">
+          Explore projetos em realidade virtual com imersão total em 3D.
+        </p>
+
+        <div style="
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 10px;
+              margin-bottom: 30px;
+              max-width: 700px;
+              margin-left: auto;
+              margin-right: auto;
+            ">
+          <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+            <video id="vr-video-1" src="TeamPage/Anim-Vr4.mp4" style="width: 100%; height: 100%; object-fit: cover"
+              autoplay muted loop playsinline></video>
+          </div>
+
+          <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+            <video id="vr-video-2" src="TeamPage/Anim-Vr1.mp4" style="width: 100%; height: 100%; object-fit: cover"
+              autoplay muted loop playsinline></video>
+          </div>
+
+          <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+            <video id="vr-video-3" src="TeamPage/Anim-Vr2.mp4" style="width: 100%; height: 100%; object-fit: cover"
+              autoplay muted loop playsinline></video>
+          </div>
+
+
+          <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+            <video id="vr-video-1" src="TeamPage/Anim-Vr3.mp4" style="width: 100%; height: 100%; object-fit: cover"
+              autoplay muted loop playsinline></video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="tech-card" style="margin-top: 60px">
+      <h4 style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 26px;
+              margin-bottom: 20px;
+              text-align: center;
+            ">
+        Maquetes Impressas 3D
+      </h4>
+
+      <p id="mockup-description" style="
+              color: #555;
+              line-height: 1.8;
+              font-size: 15px;
+              text-align: center;
+              margin-bottom: 30px;
+            ">
+        Maquetes físicas detalhadas para visualizar projetos com precisão.
+      </p>
+
+      <div style="
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 10px;
+              margin-bottom: 30px;
+              max-width: 700px;
+              margin-left: auto;
+              margin-right: auto;
+            ">
+        <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+          <video id="maquete-video-1" src="TeamPage/Anim-Maquete1.mp4" alt="Maquete 1"
+            style="width: 100%; height: 100%; object-fit: cover" autoplay muted loop playsinline></video>
+        </div>
+
+        <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+          <img id="mockup-image-2" src="img/Projetos/Sandra-Cristian/Maquete/MAQ_Sandra04.webp" alt="Maquete 2"
+            style="width: 100%; height: 100%; object-fit: cover" />
+        </div>
+
+        <div style="
+                position: relative;
+                aspect-ratio: 1 / 1;
+                background: #f5f5f5;
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              ">
+          <img id="mockup-image-3" src="img/Projetos/Graciano/Maquete/MAQ_Graciano02.webp" alt="Maquete 3"
+            style="width: 100%; height: 100%; object-fit: cover" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Aba - Nossa Cultura -->
+  <section class="culture-section" data-aos="fade-up"
+    style="padding: 80px 20px; background: #fff; border-top: 1px solid #eee">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="text-align: center; margin-bottom: 60px">
+        <h3 style="
               font-family: &quot;Playfair Display&quot;, serif;
               font-size: 32px;
               font-weight: 500;
               margin-bottom: 15px;
-            "
-          >
-            Nossa Cultura
-          </h3>
-          <p style="color: #666; font-size: 16px">
-            Quem somos além do trabalho
-          </p>
-        </div>
+            ">
+          Nossa Cultura
+        </h3>
+        <p style="color: #666; font-size: 16px">
+          Quem somos além do trabalho
+        </p>
+      </div>
 
-        <div
-          style="
+      <div style="
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
             align-items: start;
-          "
-        >
-          <div class="culture-card" data-aos="fade-right">
-            <div
-              style="
+          ">
+        <div class="culture-card" data-aos="fade-right">
+          <div style="
                 border-radius: 8px;
                 overflow: hidden;
                 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
                 margin-bottom: 25px;
                 background: #f5f5f5;
                 aspect-ratio: 16 / 9;
-              "
-            >
-              <video
-                src="TeamPage/AboutUs/Anim-Aboutus4.mp4"
-                style="
+              ">
+            <video src="TeamPage/AboutUs/Anim-Aboutus4.mp4" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
                   display: block;
-                "
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-            <h4
-              style="
+                " autoplay muted loop playsinline></video>
+          </div>
+          <h4 style="
                 font-family: &quot;Playfair Display&quot;, serif;
                 font-size: 24px;
                 margin-bottom: 12px;
-              "
-            >
-              O valor do nosso time
-            </h4>
-            <p style="color: #555; font-size: 15px; line-height: 1.6">
-              Um time alinhado entrega resultados melhores. Construímos uma
-              estrutura forte para que nossos profissionais tenham o melhor
-              ambiente de criação.
-            </p>
-          </div>
+              ">
+            O valor do nosso time
+          </h4>
+          <p style="color: #555; font-size: 15px; line-height: 1.6">
+            Um time alinhado entrega resultados melhores. Construímos uma
+            estrutura forte para que nossos profissionais tenham o melhor
+            ambiente de criação.
+          </p>
+        </div>
 
-          <div class="culture-card" data-aos="fade-left" data-aos-delay="100">
-            <div
-              style="
+        <div class="culture-card" data-aos="fade-left" data-aos-delay="100">
+          <div style="
                 border-radius: 8px;
                 overflow: hidden;
                 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
                 margin-bottom: 25px;
                 background: #f5f5f5;
                 aspect-ratio: 16 / 9;
-              "
-            >
-              <video
-                src="TeamPage/AboutUs/Anim-Aboutus6.mp4"
-                style="
+              ">
+            <video src="TeamPage/AboutUs/Anim-Aboutus6.mp4" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
                   display: block;
-                "
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-            <h4
-              style="
+                " autoplay muted loop playsinline></video>
+          </div>
+          <h4 style="
                 font-family: &quot;Playfair Display&quot;, serif;
                 font-size: 24px;
                 margin-bottom: 12px;
-              "
-            >
-              Nosso dia a dia
-            </h4>
-            <p style="color: #555; font-size: 15px; line-height: 1.6">
-              Cuidamos dos detalhes — dentro e fora dos projetos. Acreditamos
-              que a leveza do nosso cotidiano reflete diretamente na fluidez da
-              nossa arquitetura.
-            </p>
-          </div>
+              ">
+            Nosso dia a dia
+          </h4>
+          <p style="color: #555; font-size: 15px; line-height: 1.6">
+            Cuidamos dos detalhes — dentro e fora dos projetos. Acreditamos
+            que a leveza do nosso cotidiano reflete diretamente na fluidez da
+            nossa arquitetura.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Aba - Edições Casas -->
-    <section
-      class="residential-additions-section"
-      data-aos="fade-up"
-      style="padding: 80px 20px; background: #f9f9f9"
-    >
-      <div style="max-width: 1200px; margin: 0 auto">
-        <div style="text-align: center; margin-bottom: 60px">
-          <h3
-            style="
-              font-family: &quot;Playfair Display&quot;, serif;
+    <!-- Card Equipe -->
+
+  <section class="team-section" data-aos="fade-up" style="padding: 80px 20px; background: #f9f9f9">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="text-align: center; margin-bottom: 60px">
+        <h3 style="
+              font-family: 'Playfair Display', serif;
               font-size: 32px;
               font-weight: 500;
               margin-bottom: 15px;
-            "
-          >
-            Arquitetura Residencial e Expansões
-          </h3>
-          <p
-            style="
+            ">
+          Conheça nossa equipe
+        </h3>
+        <p style="
               color: #666;
               font-size: 16px;
               max-width: 650px;
               margin: 0 auto;
-            "
-          >
-            Transformando e ampliando espaços com adições modernas. Respeitamos
-            a essência de cada casa enquanto integramos novas estruturas com
-            fluidez e sofisticação.
+            ">
+          Os talentos por trás de cada projeto. Uma equipe apaixonada por transformar ideias em arquitetura de alto
+          padrão.
+        </p>
+      </div>
+
+      <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+          ">
+        <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+          <div style="
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                aspect-ratio: 4/3;
+                background: #e0e0e0;
+              ">
+            <video src="TeamPage/TeamVideos/Anim-Alberto.mp4" style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                " autoplay muted loop playsinline></video>
+          </div>
+          <h4 style="
+                font-family: 'Playfair Display', serif;
+                font-size: 22px;
+                margin-bottom: 5px;
+              ">
+            Alberto Dias
+          </h4>
+          <span
+            style="display: block; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+            Arquiteto de Interiores
+          </span>
+          <p style="color: #555; font-size: 14px; line-height: 1.6">
+           Responsável por traduzir estilo e personalidade em cada ambiente, 
+           criando espaços que unem estética, conforto e funcionalidade.
           </p>
         </div>
 
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-          "
-        >
-          <div class="project-card" data-aos="fade-up">
-            <div
-              style="
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+          <div style="
                 border-radius: 8px;
                 overflow: hidden;
                 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
                 margin-bottom: 20px;
                 aspect-ratio: 4/3;
                 background: #e0e0e0;
-              "
-            >
-              <video
-                src="TeamPage/AboutUs/Anim-Aboutus5.mp4"
-                alt="Integração com Paisagismo"
-                style="
+              ">
+            <video src="TeamPage/TeamVideos/Anim-Luiza.mp4" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
                   display: block;
-                "
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-            <h4
-              style="
-                font-family: &quot;Playfair Display&quot;, serif;
-                font-size: 22px;
-                margin-bottom: 10px;
-              "
-            >
-              Integração com o Natural
-            </h4>
-            <p style="color: #555; font-size: 14px; line-height: 1.6">
-              Design residencial com toques futuristas, destacado por elementos
-              naturais marcantes. Criamos composições únicas, como áreas de
-              entrada emolduradas por um imponente, unindo o construído ao
-              orgânico.
-            </p>
+                " autoplay muted loop playsinline></video>
           </div>
+          <h4 style="
+                font-family: 'Playfair Display', serif;
+                font-size: 22px;
+                margin-bottom: 5px;
+              ">
+            Luiza Metzker
+          </h4>
+          <span
+            style="display: block; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+            Gerente de Projetos
+          </span>
+          <p style="color: #555; font-size: 14px; line-height: 1.6">
+            Gerencia prazos, processos e execução, assegurando que cada projeto seja entregue com eficiência, 
+            organização e alto padrão.
+          </p>
+        </div>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <div
-              style="
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+          <div style="
                 border-radius: 8px;
                 overflow: hidden;
                 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
                 margin-bottom: 20px;
                 aspect-ratio: 4/3;
                 background: #e0e0e0;
-              "
-            >
-              <video
-                src="TeamPage/AboutUs/Anim-Aboutus7.mp4"
-                alt="Adições Contemporâneas"
-                style="
+              ">
+            <video src="TeamPage/TeamVideos/Anim-Mariano.mp4" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
                   display: block;
-                "
-                autoplay
-                muted
-                loop
-                playsinline
-                webkit-playsinline
-                preload="metadata"
-              ></video>
-            </div>
-            <h4
-              style="
-                font-family: &quot;Playfair Display&quot;, serif;
-                font-size: 22px;
-                margin-bottom: 10px;
-              "
-            >
-              Adições Contemporâneas
-            </h4>
-            <p style="color: #555; font-size: 14px; line-height: 1.6">
-              Expansões que dialogam com a estrutura original trazendo linhas
-              modernas, sustentáveis e fluídas. Nossas renderizações
-              ultrarrealistas garantem a visualização exata dos materiais antes
-              do início da obra.
-            </p>
+                " autoplay muted loop playsinline></video>
           </div>
+          <h4 style="
+                font-family: 'Playfair Display', serif;
+                font-size: 22px;
+                margin-bottom: 5px;
+              ">
+            Mariano Rodriguez
+          </h4>
+          <span
+            style="display: block; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+            Artista 3D
+          </span>
+          <p style="color: #555; font-size: 14px; line-height: 1.6">
+            Responsável pela criação de imagens realistas que antecipam o resultado final, 
+            permitindo visualizar cada detalhe antes da execução.
+          </p>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+          <div style="
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                aspect-ratio: 4/3;
+                background: #e0e0e0;
+              ">
+            <video src="TeamPage/TeamVideos/Anim-Hully.mp4" style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                " autoplay muted loop playsinline></video>
+          </div>
+          <h4 style="
+                font-family: 'Playfair Display', serif;
+                font-size: 22px;
+                margin-bottom: 5px;
+              ">
+            Hully Durães
+          </h4>
+          <span
+            style="display: block; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+            Arquiteta Coordenadora
+          </span>
+          <p style="color: #555; font-size: 14px; line-height: 1.6">
+            Atua na coordenação dos projetos, garantindo alinhamento entre todas as etapas, 
+            qualidade nas entregas e fidelidade ao conceito arquitetônico.
+          </p>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+          <div style="
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+                aspect-ratio: 4/3;
+                background: #e0e0e0;
+              ">
+            <video src="TeamPage/TeamVideos/Anim-NovoMembro.mp4" style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                " autoplay muted loop playsinline></video>
+          </div>
+          <h4 style="
+                font-family: 'Playfair Display', serif;
+                font-size: 22px;
+                margin-bottom: 5px;
+              ">
+            Neylon Eduardo
+          </h4>
+          <span
+            style="display: block; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+            Programador
+          </span>
+          <p style="color: #555; font-size: 14px; line-height: 1.6">
+            Atua no desenvolvimento de soluções digitais e na criação de experiências em realidade virtual.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section
-      class="team-contact-section"
-      id="contato"
-      data-aos="fade-up"
-      style="padding: 80px 20px; background: #f9f9f9"
-    >
-      <h3
-        style="
+  <!-- FIM CARD EQUIPE -->
+
+  <section class="team-contact-section" id="contato" data-aos="fade-up" style="padding: 80px 20px; background: #f9f9f9">
+    <h3 style="
           margin-bottom: 60px;
           font-family: &quot;Playfair Display&quot;, serif;
           font-size: 32px;
           font-weight: 500;
           text-align: center;
-        "
-      >
-        Entre em Contato
-      </h3>
+        ">
+      Entre em Contato
+    </h3>
 
-      <div
-        class="contact-container"
-        style="
+    <div class="contact-container" style="
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1018,15 +871,10 @@
           max-width: 800px;
           margin: 0 auto;
           flex-wrap: wrap;
-        "
-      >
-        <a
-          href="https://www.instagram.com/douglasgeorge.arquitetos/"
-          target="_blank"
-          style="text-align: center; text-decoration: none"
-        >
-          <div
-            style="
+        ">
+      <a href="https://www.instagram.com/douglasgeorge.arquitetos/" target="_blank"
+        style="text-align: center; text-decoration: none">
+        <div style="
               width: 70px;
               height: 70px;
               margin: 0 auto 15px;
@@ -1036,27 +884,17 @@
               align-items: center;
               justify-content: center;
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            "
-          >
-            <svg
-              style="width: 35px; height: 35px; fill: white"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-              />
-            </svg>
-          </div>
-          <p style="font-size: 13px; color: #666">Instagram</p>
-        </a>
+            ">
+          <svg style="width: 35px; height: 35px; fill: white" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </div>
+        <p style="font-size: 13px; color: #666">Instagram</p>
+      </a>
 
-        <a
-          href="https://wa.me/553199697624"
-          target="_blank"
-          style="text-align: center; text-decoration: none"
-        >
-          <div
-            style="
+      <a href="https://wa.me/553199697624" target="_blank" style="text-align: center; text-decoration: none">
+        <div style="
               width: 70px;
               height: 70px;
               margin: 0 auto 15px;
@@ -1066,27 +904,18 @@
               align-items: center;
               justify-content: center;
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            "
-          >
-            <svg
-              style="width: 35px; height: 35px; fill: white"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-              />
-            </svg>
-          </div>
-          <p style="font-size: 13px; color: #666">WhatsApp</p>
-        </a>
+            ">
+          <svg style="width: 35px; height: 35px; fill: white" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </div>
+        <p style="font-size: 13px; color: #666">WhatsApp</p>
+      </a>
 
-        <a
-          href="https://maps.app.goo.gl/kGW6T2zUceKnbrBx9"
-          target="_blank"
-          style="text-align: center; text-decoration: none"
-        >
-          <div
-            style="
+      <a href="https://maps.app.goo.gl/kGW6T2zUceKnbrBx9" target="_blank"
+        style="text-align: center; text-decoration: none">
+        <div style="
               width: 70px;
               height: 70px;
               margin: 0 auto 15px;
@@ -1096,24 +925,18 @@
               align-items: center;
               justify-content: center;
               box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            "
-          >
-            <svg
-              style="width: 35px; height: 35px; fill: white"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-              />
-            </svg>
-          </div>
-          <p style="font-size: 13px; color: #666">Localização</p>
-        </a>
-      </div>
-    </section>
+            ">
+          <svg style="width: 35px; height: 35px; fill: white" viewBox="0 0 24 24">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+        </div>
+        <p style="font-size: 13px; color: #666">Localização</p>
+      </a>
+    </div>
+  </section>
 
-    <footer
-      style="
+  <footer style="
         background-color: #1a1a1a;
         width: 100%;
         margin: 0;
@@ -1121,29 +944,27 @@
         text-align: center;
         border: none;
         box-sizing: border-box;
-      "
-    >
-      <p
-        style="
+      ">
+    <p style="
           color: #f5f5f5;
           font-size: 14px;
           margin: 0;
           font-family: &quot;Inter&quot;, sans-serif;
-        "
-      >
-        © 2026 DG Arquitetos. Todos os direitos reservados.
-      </p>
-    </footer>
+        ">
+      © 2026 DG Arquitetos. Todos os direitos reservados.
+    </p>
+  </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      // Inicialização do AOS
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init({ duration: 1000, once: true });
-      });
-    </script>
-    <script src="js/script.js?v=3.1"></script>
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Inicialização do AOS
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({ duration: 1000, once: true });
+    });
+  </script>
+  <script src="js/script.js?v=3.1"></script>
+</body>
+
 </html>
 
 <!-- CONTADOR TEMPO DE ATUAÇÃO E NÚMERO DE PROJETOS -->
