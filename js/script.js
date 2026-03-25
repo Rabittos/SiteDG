@@ -537,15 +537,16 @@ const projectsData = {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
-        categoryImage: 'img/Img-EmBreve.webp',
-        details: 'Construção com qualidade premium',
+        description: 'Alto padrão não se explica, se reconhece',
+        categoryImage: 'img/Projetos/Julio-Camila/Obras/Img-Obra-JulioCamila1.webp',
+        details: 'Onde o luxo encontra a exclusividade',
         detailGallery: [
-          'img/Projetos/Imagem 10.jpeg',
-          'img/Projetos/Imagem 1.jpeg'
+          'img/Projetos/Julio-Camila/Obras/Obra-Juliocamila3.mp4',
+          'img/Projetos/Julio-Camila/Obras/Obra-Juliocamila2.mp4',
+          'img/Projetos/Julio-Camila/Obras/Obra-Juliocamila1.mp4',
         ],
-        disabled: true,
-        disableClick: true,
+        disabled: false,
+        disableClick: false,
       }
     },
     gallery: [ /*IMAGENS DA MAQUETE AQUI */ ],
@@ -738,7 +739,7 @@ const projectsData = {
   },
 
     'adilson': {
-    name: 'Edificio Adilson',
+    name: 'Edificio A.D',
     location: 'Contagem • Minas Gerais',
     year: '2026',
     heroImage: 'img/Projetos/Adilson/Img/Img-Adilson5.webp',

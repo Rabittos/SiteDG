@@ -1199,7 +1199,7 @@ section:nth-child(3n+2) {
   font-family: var(--font-display);
   font-size: 56px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   letter-spacing: 0.5px;
 }
 
