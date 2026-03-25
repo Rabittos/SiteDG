@@ -1007,9 +1007,9 @@ const projectsData = {
         categoryImage: 'img/Projetos/Renato-Ramos/Obras/Obra-RenatoRamos1.webp',
         details: 'Execução de alto padrão que respeita cada detalhe do projeto',
         detailGallery: [
-          'img/Projetos/Renato-Ramos/Obras/Anim-Obra-Renatoramos1.mp4',
-          'img/Projetos/Renato-Ramos/Obras/Anim-Obra-Renatoramos2.mp4',
-          'img/Projetos/Renato-Ramos/Obras/Anim-Obra-Renatoramos3.mp4',
+          'img/Projetos/Renato-Ramos/Obras/Anim-Obra-RenatoRamos1.mp4',
+          'img/Projetos/Renato-Ramos/Obras/Anim-Obra-RenatoRamos2.mp4',
+          'img/Projetos/Renato-Ramos/Obras/Anim-Obra-RenatoRamos3.mp4',
         ],
         disabled: false,
         disableClick: false,
