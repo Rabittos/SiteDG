@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhe do Projeto - DG Arquitetos</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" as="style" href="css/style.css?v=3.1">
+  <link rel="preload" as="image" href="img/Icone/Icone.webp">
+  
+  <!-- Optimized font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+  
+  <!-- External stylesheets -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=3.1">
+  <link rel="icon" href="img/Icone/Icone200px.webp">
+</head>
+<body>
+  <!-- Header Minimalista -->
+  <header class="main-header">
+    <div class="header-content">
+      <a href="index.html" class="header-logo">
+        <img src="img/Icone/Icone.webp" alt="DG Arquitetos" height="52" width="auto" decoding="async">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu de navegação">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  
+  <!-- Menu de Navegação -->
+  <nav class="nav-menu" id="navMenu">
+    <a href="index.html#projects" class="nav-item">Projetos</a>
+    <a href="team.html" class="nav-item">Sobre Nós</a>
+    <a href="team.html#contato" class="nav-item">Contato</a>
+  </nav>
+
+    <!-- Hero Section -->
+  <canvas id="drawCanvas"></canvas>
+    <img src=""
+         id="draggable">
+  </div>
+</section>
+
+  <!-- Container Principal -->
+  <div id="projectContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 DG Arquitetos. Arquitetura que se revela.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="js/script.js?v=3.1" defer></script>
+  <script>
+    // Dados dos projetos (mesmo do script.js)
+    // Será reutilizado de global
+
+    // Função para carregar detalhes do projeto
+    function loadProjectDetail() {
+      // Obter parâmetros da URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('project');
+      const categoryKey = urlParams.get('category');
+
+      if (!projectId || !categoryKey || !projectsData[projectId]) {
+        document.getElementById('projectContainer').innerHTML = '<p>Projeto não encontrado.</p>';
+        return;
+      }
+
+      const project = projectsData[projectId];
+      const category = project.categories[categoryKey];
+      const layoutClass = project.layoutType === 'vertical' ? 'gallery-vertical-layout' : '';
+
+      // Construir HTML da página
+      let galleryHTML = '';
+      category.detailGallery.forEach(item => {
+        if (item.endsWith('.mp4')) {
+          galleryHTML += `<div class="gallery-item"><video class="lazy-video" muted loop playsinline preload="none"><source data-src="${item}" type="video/mp4"></video></div>`;
+        } else {
+          galleryHTML += `<div class="gallery-item"><img loading="lazy" decoding="async" src="${item}" alt="Galeria"></div>`;
+        }
+      });
+
+      const container = document.getElementById('projectContainer');
+      container.innerHTML = `
+        <section class="project-hero hero-banner" data-aos="fade-up">
+          <img src="${project.heroImage}" alt="${project.name}" decoding="async" loading="lazy">
+        </section>
+
+        <section class="project-detail-section" data-aos="fade-up">
+          <div class="project-detail-header">
+            <h1>${project.name}</h1>
+          </div>
+        </section>
+
+        <section class="project-gallery-full" data-aos="fade-up">
+          <div class="gallery-grid-full ${layoutClass}">
+            ${galleryHTML}
+          </div>
+        </section>
+
+      <section class="other-categories-section" data-aos="fade-up">
+         <h3>Explore Outras Perspectivas</h3>
+         <div class="other-categories-grid">
+           ${Object.entries(project.categories).map(([key, cat]) => {
+             
+             // Ignora a categoria atual
+             if (key === categoryKey) return '';
+             
+             // Verifica se a categoria atual tem a flag disableClick como true
+             const isDisabled = cat.disableClick === true;
+
+             return `
+               <div class="other-category-card ${isDisabled ? 'disabled-card' : ''}" 
+                    ${isDisabled ? '' : `onclick="goToProjectDetail('${projectId}', '${key}')"`}>
+                   <div class="other-category-image" style="background-image: url('${cat.categoryImage}')"></div>
+                  <h4>${cat.title}</h4>
+                  <p>${cat.description}</p>
+                </div>
+              `;
+           }).join('')}
+         </div>
+        </section>
+
+        <section class="back-to-projects" data-aos="fade-up">
+          <a href="index.html#project-${projectId}" class="back-button" onclick="sessionStorage.setItem('projectToOpen', '${projectId}')">← Voltar aos Projetos</a>
+        </section>
+      `;
+
+      // Inicializar AOS após carregar conteúdo
+      setTimeout(() => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+          offset: 100
+        });
+        
+        // Inicializar lazy loading de vídeos
+        if (typeof initLazyVideos === 'function') {
+          initLazyVideos();
+        }
+      }, 100);
+    }
+
+    // Carregar quando documento estiver pronto
+    document.addEventListener('DOMContentLoaded', loadProjectDetail);
+  </script>
+</body>
+</html>

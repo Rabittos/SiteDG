@@ -1,0 +1,24 @@
+name: Deploy Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+# Esta parte força o GitHub a usar o Node 24 em todas as etapas
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 
+
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5 
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ./public_html/
