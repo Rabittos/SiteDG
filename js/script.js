@@ -1037,6 +1037,53 @@ const projectsData = {
     detailGallery: [],
     layoutType: 'horizontal'
   },
+
+    'alexpolyanna': {
+    name: 'A.P House',
+    location: 'Minas Gerais • Contagem',
+    year: '2021',
+    heroImage: 'img/Projetos/Alex-Polyanna/Img/Img-AlexPolyanna2.webp',
+    description: 'Para quem exige o melhor.',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Um encontro entre ousadia estrutural e leveza visual',
+        categoryImage: 'img/Projetos/Alex-Polyanna/Img/Img-AlexPolyanna1.webp',
+        details: 'Arquitetura que desafia o comum e transforma linhas em experiência',
+        projectImages: [],
+        detailGallery: [
+          'img/Projetos/Alex-Polyanna/Img/Img-AlexPolyanna1.webp',
+          'img/Projetos/Alex-Polyanna/Img/Img-AlexPolyanna2.webp',
+          'img/Projetos/Alex-Polyanna/Img/Img-AlexPolyanna3.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Precisão em cada etapa, excelência no resultado final',
+        categoryImage: 'img/Projetos/Alex-Polyanna/Obra/Img-Obra-AlexPolyanna1.webp',
+        details: 'Uma obra que traduz visão em concreto',
+        detailGallery: [
+          'img/Projetos/Alex-Polyanna/Obra/Anim-Obra-AlexPolyanna1.mp4',
+          'img/Projetos/Alex-Polyanna/Obra/Anim-Obra-AlexPolyanna2.mp4',
+          'img/Projetos/Alex-Polyanna/Obra/Anim-Obra-AlexPolyanna3.mp4',
+        ],
+        disabled: false,
+        disableClick: false,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
 };
 
 // =============================================
