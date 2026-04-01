@@ -866,7 +866,7 @@ const projectsData = {
     name: 'P.L House',
     location: 'Alphaville • São Paulo',
     year: '2023',
-    heroImage: 'img/Projetos/Paulo/Img/Img-Paulo-6.webp',
+    heroImage: 'img/Projetos/Paulo/Img/Img-Paulo-1.webp',
     description: 'Arquitetura que ganha vida.',
     categories: {
       architecture: {
@@ -1084,6 +1084,271 @@ const projectsData = {
     detailGallery: [],
     layoutType: 'horizontal'
   },
+
+    'lucas-graciele': {
+    name: 'L.G House',
+    location: 'Minas Gerais • Contagem',
+    year: '2022',
+    heroImage: 'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele4.webp',
+    description: 'Cores e Curvas Vibrantes.',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Fugindo do padrão',
+        categoryImage: 'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele4.webp',
+        details: 'Linhas modernas, vida extraordinária',
+        projectImages: [],
+        detailGallery: [
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele1.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele2.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele3.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele4.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele5.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele6.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele7.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele8.webp',
+        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Obras que transformam projetos em realidade com precisão e qualidade',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
+
+    'eduardo': {
+    name: 'E.M House',
+    location: 'Minas Gerais • Contagem',
+    year: '2022',
+    heroImage: 'img/Projetos/EduardoMendes/Img/Img-Eduardo6.webp',
+    description: 'Cores e Curvas Vibrantes.',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Mais que projetar, criar sensações',
+        categoryImage: 'img/Projetos/EduardoMendes/Img/Img-Eduardo1.webp',
+        details: 'Onde forma e função se encontram de verdade',
+        projectImages: [],
+        detailGallery: [
+          'img/Projetos/EduardoMendes/Img/Img-Eduardo1.webp',
+          'img/Projetos/EduardoMendes/Img/Img-Eduardo2.webp',
+          'img/Projetos/EduardoMendes/Img/Img-Eduardo3.webp',
+          'img/Projetos/EduardoMendes/Img/Img-Eduardo4.webp',
+          'img/Projetos/EduardoMendes/Img/Img-Eduardo5.webp',
+          'img/Projetos/EduardoMendes/Img/Img-Eduardo6.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Funcionalidade e estética em equilíbrio real',
+        categoryImage: 'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo6.webp',
+        details: 'Funcionalidade e estética em equilíbrio real',
+        detailGallery: [
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo1.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo2.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo3.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo4.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo5.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo6.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo7.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo8.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo9.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo10.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo11.webp',
+          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo12.webp',
+        ],
+        disabled: false,
+        disableClick: false,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Obras que transformam projetos em realidade com precisão e qualidade',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
+
+    'delmiro-leia': {
+    name: 'D.L House',
+    location: 'Minas Gerais • Contagem',
+    year: '2023',
+    heroImage: 'img/Projetos/Delmiro-Leia/Img/Img-Delmiro9.webp',
+    description: 'Onde a curva dita o ritmo',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'O espaço foge da linha reta',
+        categoryImage: 'img/Projetos/Delmiro-Leia/Img/Img-Delmiro1.webp',
+        details: 'Linhas modernas, vida extraordinária',
+        projectImages: [],
+        detailGallery: [
+          'img/Projetos/Delmiro-Leia/Videos/Anim-Delmiro1.mp4',
+          'img/Projetos/Delmiro-Leia/Videos/Anim-Delmiro2.mp4',
+          'img/Projetos/Delmiro-Leia/Videos/Anim-Delmiro3.mp4',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro1.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro2.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro3.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro4.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro5.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro6.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro7.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro8.webp',
+          'img/Projetos/Delmiro-Leia/Img/Img-Delmiro9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Obras que transformam projetos em realidade com precisão e qualidade',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
+
+    'jeferson': {
+    name: 'J.F House',
+    location: 'Minas Gerais • Contagem',
+    year: '2024',
+    heroImage: 'img/Projetos/Jeverson/Img/Img-Jeverson4.webp',
+    description: 'Onde a curva dita o ritmo',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Menos forma, mais impacto',
+        categoryImage: 'img/Projetos/Jeverson/Img/Img-Jeverson4.webp',
+        details: 'Volumes que impõem presença',
+        projectImages: [],
+        detailGallery: [
+          'img/Projetos/Jeverson/Videos/Anim-Jeverson1.mp4',
+          'img/Projetos/Jeverson/Videos/Anim-Jeverson2.mp4',
+          'img/Projetos/Jeverson/Videos/Anim-Jeverson3.mp4',
+          'img/Projetos/Jeverson/Img/Img-Jeverson1.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson2.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson3.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson4.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson5.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson6.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson7.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson8.webp',
+          'img/Projetos/Jeverson/Img/Img-Jeverson9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Obras que transformam projetos em realidade com precisão e qualidade',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
+
+    'vilma': {
+    name: 'V.M House',
+    location: 'Minas Gerais • Contagem',
+    year: '2023',
+    heroImage: 'img/Projetos/Vilma/Img/Img-Vilma1.webp',
+    description: 'Integração que transforma o viver',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Equilíbrio entre arquitetura contemporânea e paisagem natural.',
+        categoryImage: 'img/Projetos/Vilma/Img/Img-Vilma4.webp',
+        details: 'Ambientes abertos conectados à natureza e ao lazer',
+        projectImages: [],
+        detailGallery: [
+          'img/Projetos/Vilma/Videos/Anim-Vilma1.mp4',
+          'img/Projetos/Vilma/Videos/Anim-Vilma2.mp4',
+          'img/Projetos/Vilma/Videos/Anim-Vilma3.mp4',
+          'img/Projetos/Vilma/Img/Img-Vilma1.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma2.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma3.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma4.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma5.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma6.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma7.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma8.webp',
+          'img/Projetos/Vilma/Img/Img-Vilma9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Obras que transformam projetos em realidade com precisão e qualidade',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
+
 };
 
 // =============================================
