@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nossa Equipe - DG Arquitetos</title>
 
+  <!-- Performance and caching meta tags -->
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Conheça a equipe DG Arquitetos. Profissionais experientes dedicados à excelência em arquitetura de luxo.">
+
   <link rel="preload" as="style" href="css/style.css?v=5" />
   <link rel="preload" as="image" href="img/Icone/Icone.webp" />
   <link rel="preload" as="image" href="img/Icone/IconeComNomeFundoBranco.webp" />
@@ -959,24 +964,11 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Inicialização do AOS
+    // Inicialização do AOS e Contador Animado
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ duration: 1000, once: true });
-    });
-  </script>
-  <script src="js/script.js?v=5"></script>
-</body>
 
-</html>
-
-<!-- CONTADOR TEMPO DE ATUAÇÃO E NÚMERO DE PROJETOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // 1. Inicialização do AOS
-    AOS.init({ duration: 1000, once: true });
-
-    // 2. Script do Contador Animado (0 a 300+)
+      // Script do Contador Animado (0 a 300+)
     const counters = document.querySelectorAll(".stats-number");
     const duration = 3000; // Tempo da animação em milissegundos (3 segundos)
 
@@ -1057,4 +1049,8 @@
     });
   });
 </script>
+<script src="js/script.js?v=5"></script>
+</body>
+
+</html>
 <script src="js/script.js?v=5"></script>

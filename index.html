@@ -8,9 +8,10 @@
 
   <title>Detalhe do Projeto - DG Arquitetos</title>
 
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
+  <!-- Performance and caching meta tags -->
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="DG Arquitetos - Arquitetura de luxo e design contemporâneo. Projetos residenciais e comerciais de alto padrão.">
 
   <!-- Preload critical resources -->
   <link rel="preload" as="style" href="css/style.css?v=5">
@@ -38,6 +39,10 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="css/style.css?v=5">
   <link rel="icon" href="img/Icone/Icone200px.webp">
+
+  <!-- Preload critical scripts -->
+  <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.js" as="script">
+  <link rel="preload" href="js/script.js?v=5" as="script">
 </head>
 
 <body>
@@ -300,7 +305,37 @@
           </div>
         </div>
       </div>
-  
+
+      <div class="grid-item" id="project-henrique-graziele" onclick="openProject('henrique-graziele')" data-aos="fade-up" data-aos-delay="250">
+        <div class="grid-image">
+          <img src="img/Projetos/Henrique-Graziele/Img-Henrique1.webp" alt="h.g House" loading="lazy" decoding="async">
+          <div class="grid-overlay">
+            <h3>H.G House</h3>
+            <p>Minas Gerais • 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item" id="project-renato-rosa" onclick="openProject('renato-rosa')" data-aos="fade-up" data-aos-delay="250">
+        <div class="grid-image">
+          <img src="img/Projetos/Renato-Rosa/Img-RenatoRosa1.webp" alt="r.r House" loading="lazy" decoding="async">
+          <div class="grid-overlay">
+            <h3>R.R House</h3>
+            <p>Minas Gerais • 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item" id="project-edson-fabiane" onclick="openProject('edson-fabiane')" data-aos="fade-up" data-aos-delay="250">
+        <div class="grid-image">
+          <img src="img/Projetos/Edson-Fabiane/Img-Edson1.webp" alt="e.f House" loading="lazy" decoding="async">
+          <div class="grid-overlay">
+            <h3>E.F House</h3>
+            <p>Minas Gerais • 2026</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     </section>

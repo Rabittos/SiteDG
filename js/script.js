@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Dados dos projetos
-const projectsData = {
+    // Load projects data asynchronously
+      const projectsData = {
   'fa-house': {
     name: 'F.A House',
     location: 'Minas Gerais',
@@ -1349,7 +1349,290 @@ const projectsData = {
     layoutType: 'horizontal'
   },
 
+  'henrique-graziele': {
+    name: 'H.G House',
+    location: 'Minas Gerais',
+    year: '2025',
+    heroImage: 'img/Projetos/Henrique-Graziele/Img-Henrique1.webp',
+    description: 'Design contemporâneo que une elegância e funcionalidade.',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Design moderno e sofisticado',
+        categoryImage: 'img/Projetos/Henrique-Graziele/Img-Henrique1.webp',
+        details: 'Projeto contemporâneo que equilibra funcionalidade e estética. Design sofisticado com atenção aos detalhes.',
+        projectImages: [
+          'img/Projetos/Henrique-Graziele/Img-Henrique1.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique2.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique3.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique4.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique5.webp'
+        ],
+        detailGallery: [
+          'img/Projetos/Henrique-Graziele/Videos/Anim-Henrique1.mp4',
+          'img/Projetos/Henrique-Graziele/Videos/Anim-Henrique2.mp4',
+          'img/Projetos/Henrique-Graziele/Videos/Anim-Henrique3.mp4',
+          'img/Projetos/Henrique-Graziele/Img-Henrique1.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique2.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique3.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique4.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique5.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique6.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique7.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique8.webp',
+          'img/Projetos/Henrique-Graziele/Img-Henrique9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Construção com qualidade premium',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [],
+    detailGallery: [
+      'img/Projetos/Henrique-Graziele/Img-Henrique2.webp',
+      'img/Projetos/Henrique-Graziele/Img-Henrique3.webp',
+      'img/Projetos/Henrique-Graziele/Img-Henrique4.webp',
+      'img/Projetos/Henrique-Graziele/Img-Henrique5.webp'
+    ],
+    layoutType: 'horizontal'
+  },
+
+  'renato-rosa': {
+    name: 'R.R House',
+    location: 'Minas Gerais',
+    year: '2024',
+    heroImage: 'img/Projetos/Renato-Rosa/Img-RenatoRosa2.webp',
+    description: 'Harmonia entre tradição e modernidade em cada detalhe.',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Design contemporâneo com toques clássicos',
+        categoryImage: 'img/Projetos/Renato-Rosa/Img-RenatoRosa1.webp',
+        details: 'Projeto que harmoniza tradição e modernidade. Design contemporâneo com toques clássicos que criam ambientes únicos.',
+        projectImages: [
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa1.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa2.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa3.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa4.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa5.webp'
+        ],
+        detailGallery: [
+          'img/Projetos/Renato-Rosa/Videos/Anim-Renato1.mp4',
+          'img/Projetos/Renato-Rosa/Videos/Anim-Renato2.mp4',
+          'img/Projetos/Renato-Rosa/Videos/Anim-Renato3.mp4',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa1.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa2.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa3.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa4.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa5.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa6.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa7.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa8.webp',
+          'img/Projetos/Renato-Rosa/Img-RenatoRosa9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Construção com qualidade premium',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [],
+    detailGallery: [
+      'img/Projetos/Renato-Rosa/Img-RenatoRosa2.webp',
+      'img/Projetos/Renato-Rosa/Img-RenatoRosa3.webp',
+      'img/Projetos/Renato-Rosa/Img-RenatoRosa4.webp',
+      'img/Projetos/Renato-Rosa/Img-RenatoRosa5.webp'
+    ],
+    layoutType: 'horizontal'
+  },
+
+  'edson-fabiane': {
+    name: 'E.F House',
+    location: 'Minas Gerais',
+    year: '2026',
+    heroImage: 'img/Projetos/Edson-Fabiane/Img-Edson6.webp',
+    description: 'Inovação e conforto se encontram em perfeita sintonia.',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Design inovador e funcional',
+        categoryImage: 'img/Projetos/Edson-Fabiane/Img-Edson1.webp',
+        details: 'Projeto que une inovação e conforto. Design inovador e funcional que transforma espaços em experiências únicas.',
+        projectImages: [
+          'img/Projetos/Edson-Fabiane/Img-Edson1.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson2.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson3.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson4.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson5.webp'
+        ],
+        detailGallery: [
+          'img/Projetos/Edson-Fabiane/Videos/Anim-Edson1.mp4',
+          'img/Projetos/Edson-Fabiane/Videos/Anim-Edson2.mp4',
+          'img/Projetos/Edson-Fabiane/Videos/Anim-Edson3.mp4',
+          'img/Projetos/Edson-Fabiane/Img-Edson1.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson2.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson3.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson4.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson5.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson6.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson7.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson8.webp',
+          'img/Projetos/Edson-Fabiane/Img-Edson9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Construção com qualidade premium',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [],
+    detailGallery: [
+      'img/Projetos/Edson-Fabiane/Img-Edson2.webp',
+      'img/Projetos/Edson-Fabiane/Img-Edson3.webp',
+      'img/Projetos/Edson-Fabiane/Img-Edson4.webp',
+      'img/Projetos/Edson-Fabiane/Img-Edson5.webp'
+    ],
+    layoutType: 'horizontal'
+  },
+
 };
+
+// =============================================
+// VIDEO OPTIMIZATION
+// =============================================
+
+// Lazy loading de vídeos com Intersection Observer
+function initLazyVideos() {
+  const lazyVideos = document.querySelectorAll('video.lazy-video');
+
+  if (!lazyVideos.length) return;
+
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const video = entry.target;
+          const source = video.querySelector('source');
+
+          // Carregar o vídeo
+          if (source?.dataset.src) {
+            source.src = source.dataset.src;
+            video.load();
+
+            // Reproduzir quando estiver pronto
+            video.addEventListener('loadeddata', () => {
+              video.play().catch(e => console.log('Video autoplay prevented:', e));
+            }, { once: true });
+
+            video.classList.remove('lazy-video');
+            observer.unobserve(video);
+          }
+        }
+      });
+    }, {
+      rootMargin: '50px',
+      threshold: 0.1
+    });
+
+    lazyVideos.forEach(video => videoObserver.observe(video));
+  } else {
+    // Fallback para navegadores sem suporte a IntersectionObserver
+    lazyVideos.forEach(video => {
+      const source = video.querySelector('source');
+      if (source?.dataset.src) {
+        source.src = source.dataset.src;
+        video.load();
+        video.play().catch(e => console.log('Video autoplay prevented:', e));
+      }
+    });
+  }
+}
+
+// Optimize existing videos with autoplay
+function optimizeAutoplayVideos() {
+  const autoplayVideos = document.querySelectorAll('video[autoplay]');
+
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          // Video is visible, play it
+          if (video.paused) {
+            video.play().catch(e => console.log('Video autoplay prevented:', e));
+          }
+        } else {
+          // Video is not visible, pause it
+          if (!video.paused) {
+            video.pause();
+          }
+        }
+      });
+    }, {
+      rootMargin: '100px',
+      threshold: 0.1
+    });
+
+    autoplayVideos.forEach(video => {
+      // Initially pause all videos
+      video.pause();
+      videoObserver.observe(video);
+    });
+  }
+}
+
+// Initialize video optimizations
+document.addEventListener('DOMContentLoaded', () => {
+  // Defer video optimization to improve initial load
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      optimizeAutoplayVideos();
+    }, 1000);
+  });
+});
 
 // =============================================
 // PROJECT MODAL FUNCTIONS
