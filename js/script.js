@@ -1900,7 +1900,7 @@ const initDraggableIcon = () => {
 
   // Configuração visual da "caneta"
   ctx.strokeStyle = 'rgba(0, 0, 0, 0.6)'; // Cor e transparência
-  ctx.lineWidth = 4; // Grossura da linha
+  ctx.lineWidth = 1.5; // Grossura da linha
   ctx.lineCap = 'round'; // Pontas arredondadas
   ctx.lineJoin = 'round'; // Curvas suaves
 
