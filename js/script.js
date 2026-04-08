@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
       interiors: {
         title: 'Interiores',
         description: 'Espaços amplos e arejados',
-        categoryImage: 'img/Projetos/Graciano/Interiores/IMG_INT_Graciano05.webp',
+        categoryImage: 'img/Projetos/Graciano/Interiores/IMG_INT_Graciano10.webp',
         details: 'Interiores amplos que aproveitam a profundidade do projeto. Espaços integrados e funcionais.',
         detailGallery: [
           'img/Projetos/Graciano/Interiores/IMG_INT_Graciano01.webp',
