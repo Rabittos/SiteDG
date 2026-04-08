@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
       interiors: {
         title: 'Interiores',
         description: 'Espaços sofisticados',
-        categoryImage: 'img/Projetos/Drayce-Rafael/Interiores/IMG_INT_Drayce06.webp',
+        categoryImage: 'img/Projetos/Drayce-Rafael/Interiores/IMG_INT_Drayce12.webp',
         details: 'Interiores que refletem sofisticação e bom gosto. Design que transcende tendências.',
         detailGallery: [
           'img/Projetos/Drayce-Rafael/Interiores/IMG_INT_Drayce06.webp',
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
       architecture: {
         title: 'Projeto Arquitetônico',
         description: 'Design inovador',
-        categoryImage: 'img/Projetos/Michael/Img-Michael1.webp',
+        categoryImage: 'img/Projetos/Michael/Img-Michael4.webp',
         details: 'Projeto inovador que redefine padrões. Cada elemento pensado para máxima funcionalidade e beleza.',
         projectImages: [
           'img/Projetos/Michael/Img-Michael1.webp',
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Execução inovadora com tecnologias modernas e métodos avançados de construção.',
         detailGallery: [
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
       interiors: {
         title: 'Interiores',
         description: 'Ambientes harmoniosos',
-        categoryImage: 'img/Projetos/Marcio-Rita/IMG/Interiores/IMG_INT_Marcio-Rita06.webp',
+        categoryImage: 'img/Projetos/Marcio-Rita/IMG/Interiores/IMG_INT_Marcio-Rita08.webp',
         details: 'Interiores que transmitem paz e harmonia. Design que evoca conforto e elegância sem excessos.',
         detailGallery: [
           'img/Projetos/Marcio-Rita/IMG/Interiores/IMG_INT_Marcio-Rita07.webp',
@@ -456,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
       interiors: {
         title: 'Interiores',
         description: 'Design que transforma espaços',
-        categoryImage: 'img/Projetos/Julio-Camila/Interiores/IMG_INT_Julio-Camila05.webp',
+        categoryImage: 'img/Projetos/Julio-Camila/Interiores/IMG_INT_Julio-Camila09.webp',
         details: 'Cada espaço conta uma história, o design é quem dá voz a ela.',
         detailGallery: [
           'img/Projetos/Julio-Camila/Interiores/IMG_INT_Julio-Camila04.webp',
@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -602,7 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [
@@ -631,7 +631,7 @@ document.addEventListener('DOMContentLoaded', () => {
     categories: {
       architecture: {
         title: 'Projeto Arquitetônico',
-        description: 'Design contemporâneo',
+        description: 'Onde as Curvas formam o viver',
         categoryImage: 'img/Projetos/Renata-Gil/Img-Renata1.webp',
         details: 'Projeto contemporâneo que une elegância com modernidade',
         projectImages: [
@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -665,7 +665,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [
@@ -716,7 +716,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -725,7 +725,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [],
@@ -768,7 +768,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -777,7 +777,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [],
@@ -800,7 +800,7 @@ document.addEventListener('DOMContentLoaded', () => {
       architecture: {
         title: 'Projeto Arquitetônico',
         description: 'Uma casa onde as curvas conduzem o olhar',
-        categoryImage: 'img/Projetos/Adriano Silveira/Img/Img-Adriano3.webp',
+        categoryImage: 'img/Projetos/Adriano Silveira/Img/Img-Adriano8.webp',
         details: 'O essencial, elevado ao extraordinário',
         projectImages: [],
         detailGallery: [
@@ -889,12 +889,29 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
-        categoryImage: 'img/Img-EmBreve.webp',
+        description: 'Design de interiores sofisticado',
+        categoryImage: 'img/Projetos/Paulo/Interiores/Img-Int-Paulo1.webp',
         details: 'Interiores em desenvolvimento',
-        detailGallery: [],
-        disabled: true,
-        disableClick: true,
+        detailGallery: [
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo1.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo2.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo5.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo4.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo3.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo13.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo7.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo8.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo9.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo10.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo11.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo12.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo6.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo14.webp',
+          'img/Projetos/Paulo/Interiores/Img-Int-Paulo15.webp',
+
+        ],
+        disabled: false,
+        disableClick: false,
       },
       construction: {
         title: 'Obra',
@@ -923,7 +940,7 @@ document.addEventListener('DOMContentLoaded', () => {
       architecture: {
         title: 'Projeto Arquitetônico',
         description: 'Sofisticação que se sente',
-        categoryImage: 'img/Projetos/Paulo/Img/Img-Paulo-5.webp',
+        categoryImage: 'img/Projetos/Tiago/Img-Tiago3.webp',
         details: 'Linhas modernas, vida extraordinária',
         projectImages: [],
         detailGallery: [
@@ -943,7 +960,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -975,7 +992,7 @@ document.addEventListener('DOMContentLoaded', () => {
       architecture: {
         title: 'Projeto Arquitetônico',
         description: 'Minimalismo elegante com presença marcante',
-        categoryImage: 'img/Projetos/Renato-Ramos/Img/Img-RenatoRamos2.webp',
+        categoryImage: 'img/Projetos/Renato-Ramos/Img/Img-RenatoRamos10.webp',
         details: 'Mais que um ambiente, uma vivência',
         projectImages: [],
         detailGallery: [
@@ -996,7 +1013,7 @@ document.addEventListener('DOMContentLoaded', () => {
       interiors: {
         title: 'Interiores',
         description: 'Seu espaço, sua essência',
-        categoryImage: 'img/Projetos/Renato-Ramos/Interiores/Int-RenatoRamos5.webp',
+        categoryImage: 'img/Projetos/Renato-Ramos/Interiores/Int-RenatoRamos2.webp',
         details: 'Design pensado para refletir estilo e conforto em cada detalhe.',
         detailGallery: [
           'img/Projetos/Renato-Ramos/Interiores/Int-RenatoRamos1.webp',
@@ -1059,7 +1076,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1112,71 +1129,12 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
         disabled: true,
         disableClick: true,
-      },
-      construction: {
-        title: 'Obra',
-        description: 'Em Breve',
-        categoryImage: 'img/Img-EmBreve.webp',
-        details: 'Obras que transformam projetos em realidade com precisão e qualidade',
-        detailGallery: [],
-        disabled: true,
-        disableClick: true,
-      }
-    },
-    gallery: [ /* MAQUETE AQUI */],
-    detailGallery: [],
-    layoutType: 'horizontal'
-  },
-
-    'eduardo': {
-    name: 'E.M House',
-    location: 'Minas Gerais • Contagem',
-    year: '2022',
-    heroImage: 'img/Projetos/EduardoMendes/Img/Img-Eduardo6.webp',
-    description: 'Cores e Curvas Vibrantes.',
-    categories: {
-      architecture: {
-        title: 'Projeto Arquitetônico',
-        description: 'Mais que projetar, criar sensações',
-        categoryImage: 'img/Projetos/EduardoMendes/Img/Img-Eduardo1.webp',
-        details: 'Onde forma e função se encontram de verdade',
-        projectImages: [],
-        detailGallery: [
-          'img/Projetos/EduardoMendes/Img/Img-Eduardo1.webp',
-          'img/Projetos/EduardoMendes/Img/Img-Eduardo2.webp',
-          'img/Projetos/EduardoMendes/Img/Img-Eduardo3.webp',
-          'img/Projetos/EduardoMendes/Img/Img-Eduardo4.webp',
-          'img/Projetos/EduardoMendes/Img/Img-Eduardo5.webp',
-          'img/Projetos/EduardoMendes/Img/Img-Eduardo6.webp',
-        ]
-      },
-      interiors: {
-        title: 'Interiores',
-        description: 'Funcionalidade e estética em equilíbrio real',
-        categoryImage: 'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo6.webp',
-        details: 'Funcionalidade e estética em equilíbrio real',
-        detailGallery: [
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo1.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo2.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo3.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo4.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo5.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo6.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo7.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo8.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo9.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo10.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo11.webp',
-          'img/Projetos/EduardoMendes/Interiores/Img-Int-Eduardo12.webp',
-        ],
-        disabled: false,
-        disableClick: false,
       },
       construction: {
         title: 'Obra',
@@ -1223,7 +1181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1275,7 +1233,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1327,7 +1285,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1336,12 +1294,14 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em Breve',
-        categoryImage: 'img/Img-EmBreve.webp',
+        description: 'Obras que transformam projetos em realidade com precisão e qualidade',
+        categoryImage: 'img/Projetos/Vilma/Obra/Img-Obra-Vilma.webp',
         details: 'Obras que transformam projetos em realidade com precisão e qualidade',
-        detailGallery: [],
-        disabled: true,
-        disableClick: true,
+        detailGallery: [
+          'img/Projetos/Vilma/Obra/Obra-Vilma.mp4',
+        ],
+        disabled: false,
+        disableClick: false,
       }
     },
     gallery: [ /* MAQUETE AQUI */],
@@ -1385,7 +1345,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1394,7 +1354,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [],
@@ -1448,7 +1408,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1457,7 +1417,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [],
@@ -1511,7 +1471,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       interiors: {
         title: 'Interiores',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Interiores em desenvolvimento',
         detailGallery: [],
@@ -1520,7 +1480,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       construction: {
         title: 'Obra',
-        description: 'Em breve',
+        description: 'Em Breve',
         categoryImage: 'img/Img-EmBreve.webp',
         details: 'Construção com qualidade premium',
         detailGallery: [],
@@ -2113,9 +2073,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-
-  
-
-  
 
 }); // Fim do DOMContentLoaded
