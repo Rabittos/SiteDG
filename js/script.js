@@ -790,6 +790,58 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'vertical'
   },
 
+    'genivaldo': {
+    name: 'G.N House',
+    location: 'Contagem • Minas Gerais',
+    year: '2025',
+    heroImage: 'img/Projetos/Genivaldo/Img-Genivaldo4.webp',
+    description: 'Linhas ousadas que transformam espaço em presença',
+    categories: {
+      architecture: {
+        title: 'Projeto Arquitetônico',
+        description: 'Arquitetura que desafia o comum',
+        categoryImage: 'img/Projetos/Genivaldo/Img-Genivaldo1.webp',
+        details: 'Arquitetura que desafia o comum',
+        projectImages: [],
+        detailGallery: [
+          'img/Projetos/Genivaldo/Videos/Anim-Genivaldo1.mp4',
+          'img/Projetos/Genivaldo/Videos/Anim-Genivaldo2.mp4',
+          'img/Projetos/Genivaldo/Videos/Anim-Genivaldo3.mp4',
+          'img/Projetos/Genivaldo/Img-Genivaldo1.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo2.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo3.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo4.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo5.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo6.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo7.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo8.webp',
+          'img/Projetos/Genivaldo/Img-Genivaldo9.webp',
+        ]
+      },
+      interiors: {
+        title: 'Interiores',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Interiores em desenvolvimento',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      },
+      construction: {
+        title: 'Obra',
+        description: 'Em Breve',
+        categoryImage: 'img/Img-EmBreve.webp',
+        details: 'Construção com qualidade premium',
+        detailGallery: [],
+        disabled: true,
+        disableClick: true,
+      }
+    },
+    gallery: [ /* MAQUETE AQUI */],
+    detailGallery: [],
+    layoutType: 'horizontal'
+  },
+
     'adriano silveira': {
     name: 'A.S House',
     location: 'Contagem • Minas Gerais',
