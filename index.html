@@ -31,13 +31,11 @@
 
   <!-- External stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </noscript>
+    </noscript>
 
   <!-- Main stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <link rel="icon" href="img/Icone/Icone200px.webp">
 
   <!-- Preload critical scripts -->
@@ -48,7 +46,7 @@
 <body>
   <header class="main-header">
     <div class="header-content">
-      <a href="index.html" class="header-logo" data-aos="fade-down">
+      <a href="index.html" class="header-logo">
         <img src="img/Icone/Icone.webp" alt="DG Arquitetos" height="52" width="auto" decoding="async">
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu de navegação">
@@ -79,12 +77,12 @@
   </section>
 
 
+
   <!-- Grid de Projetos - 3 Colunas -->
   <section class="projects-grid" id="projects">
     <div class="grid-container">
 
-      <div class="grid-item" id="project-fa-house" onclick="openProject('fa-house')" data-aos="fade-up"
-        data-aos-delay="175">
+      <div class="grid-item" id="project-fa-house" onclick="openProject('fa-house')">
         <div class="grid-image">
           <img src="img/Projetos/FabricioAndrade/Img-Fabricio1.webp" alt="F.A House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -94,8 +92,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-f-house" onclick="openProject('g.n-house')" data-aos="fade-up"
-        data-aos-delay="200">
+      <div class="grid-item" id="project-f-house" onclick="openProject('g.n-house')">
         <div class="grid-image">
           <img src="img/Projetos/Graciano/IMG/IMG_GRACIANO04.webp" alt="G.N House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -105,8 +102,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-adilson" onclick="openProject('adilson')" data-aos="fade-up"
-        data-aos-delay="600">
+      <div class="grid-item" id="project-adilson" onclick="openProject('adilson')">
         <div class="grid-image">
           <img src="img/Projetos/Adilson/Img/Img-Adilson10.webp" alt="Edificio A.D" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -116,8 +112,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-g.n-house" onclick="openProject('genivaldo')" data-aos="fade-up"
-        data-aos-delay="300">
+      <div class="grid-item" id="project-g.n-house" onclick="openProject('genivaldo')">
         <div class="grid-image">
           <img src="img/Projetos/Genivaldo/Img-Genivaldo2.webp" alt="M. House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -127,8 +122,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-m-house" onclick="openProject('m-house')" data-aos="fade-up"
-        data-aos-delay="300">
+      <div class="grid-item" id="project-m-house" onclick="openProject('m-house')">
         <div class="grid-image">
           <img src="img/Projetos/Michael/Img-Michael4.webp" alt="M. House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -138,8 +132,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-m.r-house" onclick="openProject('m.r-house')" data-aos="fade-up"
-        data-aos-delay="325">
+      <div class="grid-item" id="project-m.r-house" onclick="openProject('m.r-house')">
         <div class="grid-image">
           <img src="img/Projetos/Marcio-Rita/IMG/IMG-Marcio-Rita04.webp" alt="R. House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -149,7 +142,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-adair" onclick="openProject('adair')" data-aos="fade-up" data-aos-delay="375">
+      <div class="grid-item" id="project-adair" onclick="openProject('adair')">
         <div class="grid-image">
           <img src="img/Projetos/Adair/Img-Adair4.webp" alt="A. House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -159,8 +152,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-julio-camila" onclick="openProject('julio-camila')" data-aos="fade-up"
-        data-aos-delay="450">
+      <div class="grid-item" id="project-julio-camila" onclick="openProject('julio-camila')">
         <div class="grid-image">
           <img src="img/Projetos/Julio-Camila/IMG/IMG_Julio-Camila04.webp" alt="J.C House" loading="lazy"
             decoding="async">
@@ -171,8 +163,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-sandra-cristian" onclick="openProject('sandra-cristian')" data-aos="fade-up"
-        data-aos-delay="500">
+      <div class="grid-item" id="project-sandra-cristian" onclick="openProject('sandra-cristian')">
         <div class="grid-image">
           <img src="img/Projetos/Sandra-Cristian/Img-Sandra5.webp" alt="S.C House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -182,8 +173,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-renata-gil" onclick="openProject('renata-gil')" data-aos="fade-up"
-        data-aos-delay="600">
+      <div class="grid-item" id="project-renata-gil" onclick="openProject('renata-gil')">
         <div class="grid-image">
           <img src="img/Projetos/Renata-Gil/Img-Renata1.webp" alt="R.G House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -193,8 +183,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-cassio-isabella" onclick="openProject('cassio-isabella')" data-aos="fade-up"
-        data-aos-delay="600">
+      <div class="grid-item" id="project-cassio-isabella" onclick="openProject('cassio-isabella')">
         <div class="grid-image">
           <img src="img/Projetos/Cassio-Isabella/Img-Cassio4.webp" alt="C.I House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -204,8 +193,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-h-house" onclick="openProject('d.r-house')" data-aos="fade-up"
-        data-aos-delay="250">
+      <div class="grid-item" id="project-h-house" onclick="openProject('d.r-house')">
         <div class="grid-image">
           <img src="img/Projetos/Drayce-Rafael/IMG/IMG_Drayce02.webp" alt="H. House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -215,8 +203,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-adriano-silveira" onclick="openProject('adriano silveira')" data-aos="fade-up"
-        data-aos-delay="250">
+      <div class="grid-item" id="project-adriano-silveira" onclick="openProject('adriano silveira')">
         <div class="grid-image">
           <img src="img/Projetos/Adriano Silveira/Img/Img-Adriano12.webp" alt="a.s House" loading="lazy"
             decoding="async">
@@ -227,7 +214,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-paulo" onclick="openProject('paulo')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-paulo" onclick="openProject('paulo')">
         <div class="grid-image">
           <img src="img/Projetos/Paulo/Img/Img-Paulo-2.webp" alt="p.l House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -237,7 +224,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-tiago" onclick="openProject('tiago')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-tiago" onclick="openProject('tiago')">
         <div class="grid-image">
           <img src="img/Projetos/Tiago/Img-Tiago10.webp" alt="t.g House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -247,7 +234,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-renatoramos" onclick="openProject('renatoramos')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-renatoramos" onclick="openProject('renatoramos')">
         <div class="grid-image">
           <img src="img/Projetos/Renato-Ramos/Img/Img-RenatoRamos7.webp" alt="r.r House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -257,7 +244,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-alexpolyanna" onclick="openProject('alexpolyanna')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-alexpolyanna" onclick="openProject('alexpolyanna')">
         <div class="grid-image">
           <img src="img/Projetos/Alex-Polyanna/Img/Img-AlexPolyanna1.webp" alt="a.p House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -267,7 +254,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-lucas" onclick="openProject('lucas-graciele')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-lucas" onclick="openProject('lucas-graciele')">
         <div class="grid-image">
           <img src="img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele3.webp" alt="l.g House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -277,7 +264,7 @@
         </div>
       </div>  
 
-      <div class="grid-item" id="project-delmiro" onclick="openProject('delmiro-leia')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-delmiro" onclick="openProject('delmiro-leia')">
         <div class="grid-image">
           <img src="img/Projetos/Delmiro-Leia/Img/Img-Delmiro5.webp" alt="d.l House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -287,7 +274,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-jeferson" onclick="openProject('jeferson')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-jeferson" onclick="openProject('jeferson')">
         <div class="grid-image">
           <img src="img/Projetos/Jeverson/Img/Img-Jeverson4.webp" alt="j.f House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -297,7 +284,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-vilma" onclick="openProject('vilma')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-vilma" onclick="openProject('vilma')">
         <div class="grid-image">
           <img src="img/Projetos/Vilma/Img/Img-Vilma6.webp" alt="v.m House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -307,7 +294,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-henrique-graziele" onclick="openProject('henrique-graziele')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-henrique-graziele" onclick="openProject('henrique-graziele')">
         <div class="grid-image">
           <img src="img/Projetos/Henrique-Graziele/Img-Henrique1.webp" alt="h.g House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -317,7 +304,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-renato-rosa" onclick="openProject('renato-rosa')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-renato-rosa" onclick="openProject('renato-rosa')">
         <div class="grid-image">
           <img src="img/Projetos/Renato-Rosa/Img-RenatoRosa1.webp" alt="r.r House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -327,7 +314,7 @@
         </div>
       </div>
 
-      <div class="grid-item" id="project-edson-fabiane" onclick="openProject('edson-fabiane')" data-aos="fade-up" data-aos-delay="250">
+      <div class="grid-item" id="project-edson-fabiane" onclick="openProject('edson-fabiane')">
         <div class="grid-image">
           <img src="img/Projetos/Edson-Fabiane/Img-Edson1.webp" alt="e.f House" loading="lazy" decoding="async">
           <div class="grid-overlay">
@@ -342,7 +329,7 @@
     </section>
 
     <!-- Seção de Equipe -->
-    <section class="team-preview" id="team-section" data-aos="fade-up">
+    <section class="team-preview" id="team-section">
       <div class="team-image-container" onclick="window.location.href='team.html'">
         <img src="img/Icone/IconeComNome.webp" alt="Equipe DG Arquitetos" loading="lazy" decoding="async">
         <div class="team-click-indicator">
@@ -364,8 +351,16 @@
       </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="js/script.js?v=5" defer></script>
-</body>
+    <!-- GSAP Animation Library -->
+    
+    <!-- GSAP Core & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="js/script.js?v=6" defer></script>
+    <script src="js/animations.js" defer></script>
+    </body>
+
 
 </html>

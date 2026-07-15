@@ -18,7 +18,7 @@ const debounce = (func, wait = 20) => {
 // Throttle function para limitar execuções
 const throttle = (func, limit = 16) => {
   let inThrottle;
-  return function(...args) {
+  return function (...args) {
     if (!inThrottle) {
       func.apply(this, args);
       inThrottle = true;
@@ -27,14 +27,7 @@ const throttle = (func, limit = 16) => {
   };
 };
 
-// Inicializar AOS
 document.addEventListener('DOMContentLoaded', () => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 100,
-    easing: 'ease-out-cubic'
-  });
 
   // Verificar se há um projeto para abrir ao voltar
   const projectToOpen = sessionStorage.getItem('projectToOpen');
@@ -53,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-    // Load projects data asynchronously
-      const projectsData = {
+// Load projects data asynchronously
+const projectsData = {
   'fa-house': {
     name: 'F.A House',
     location: 'Minas Gerais',
@@ -121,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       }
     },
-    gallery: [ 
+    gallery: [
       'img/Projetos/FabricioAndrade/Maquete/Img-Fabricio-Maquete1.webp',
       'img/Projetos/FabricioAndrade/Maquete/Img-Fabricio-Maquete2.webp',
       'img/Projetos/FabricioAndrade/Maquete/Anim-Fabricio-Maquete1.mp4',
@@ -477,7 +470,7 @@ document.addEventListener('DOMContentLoaded', () => {
         disableClick: false,
       }
     },
-    gallery: [ /* IMAGENS DA MAQUETE AQUI */ ],
+    gallery: [ /* IMAGENS DA MAQUETE AQUI */],
     detailGallery: [],
     layoutType: 'horizontal'
   },
@@ -549,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
         disableClick: false,
       }
     },
-    gallery: [ /*IMAGENS DA MAQUETE AQUI */ ],
+    gallery: [ /*IMAGENS DA MAQUETE AQUI */],
     detailGallery: [],
     layoutType: 'horizontal'
   },
@@ -686,7 +679,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'cassio-isabella': {
+  'cassio-isabella': {
     name: 'C.I House',
     location: 'Contagem • Minas Gerais',
     year: '2025',
@@ -738,7 +731,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'adilson': {
+  'adilson': {
     name: 'Edificio A.D',
     location: 'Contagem • Minas Gerais',
     year: '2026',
@@ -790,7 +783,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'vertical'
   },
 
-    'genivaldo': {
+  'genivaldo': {
     name: 'G.N House',
     location: 'Contagem • Minas Gerais',
     year: '2025',
@@ -842,7 +835,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'adriano silveira': {
+  'adriano silveira': {
     name: 'A.S House',
     location: 'Contagem • Minas Gerais',
     year: '2023',
@@ -914,7 +907,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'paulo': {
+  'paulo': {
     name: 'P.L House',
     location: 'Alphaville • São Paulo',
     year: '2023',
@@ -982,7 +975,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'tiago': {
+  'tiago': {
     name: 'T.G House',
     location: 'Minas Gerais • Contagem',
     year: '2024',
@@ -1034,7 +1027,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'renatoramos': {
+  'renatoramos': {
     name: 'R.R House',
     location: 'Minas Gerais • Contagem',
     year: '2022',
@@ -1107,7 +1100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'alexpolyanna': {
+  'alexpolyanna': {
     name: 'A.P House',
     location: 'Minas Gerais • Contagem',
     year: '2021',
@@ -1154,7 +1147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'lucas-graciele': {
+  'lucas-graciele': {
     name: 'L.G House',
     location: 'Minas Gerais • Contagem',
     year: '2022',
@@ -1168,15 +1161,15 @@ document.addEventListener('DOMContentLoaded', () => {
         details: 'Linhas modernas, vida extraordinária',
         projectImages: [],
         detailGallery: [
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele1.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele2.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele3.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele4.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele5.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele6.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele7.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele8.webp',
-        'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele9.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele1.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele2.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele3.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele4.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele5.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele6.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele7.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele8.webp',
+          'img/Projetos/Lucas-Graciele/Img/Img-LucasGraciele9.webp',
         ]
       },
       interiors: {
@@ -1203,7 +1196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'delmiro-leia': {
+  'delmiro-leia': {
     name: 'D.L House',
     location: 'Minas Gerais • Contagem',
     year: '2023',
@@ -1255,7 +1248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'jeferson': {
+  'jeferson': {
     name: 'J.F House',
     location: 'Minas Gerais • Contagem',
     year: '2024',
@@ -1307,7 +1300,7 @@ document.addEventListener('DOMContentLoaded', () => {
     layoutType: 'horizontal'
   },
 
-    'vilma': {
+  'vilma': {
     name: 'V.M House',
     location: 'Minas Gerais • Contagem',
     year: '2023',
@@ -1727,7 +1720,7 @@ function openProject(projectId) {
 
   modal.style.display = 'block';
   document.body.style.overflow = 'hidden';
-  
+
   // Inicializar lazy loading de vídeos
   requestAnimationFrame(() => initLazyVideos());
 }
@@ -1735,26 +1728,26 @@ function openProject(projectId) {
 // Lazy loading de vídeos com Intersection Observer
 function initLazyVideos() {
   const lazyVideos = document.querySelectorAll('video.lazy-video');
-  
+
   if (!lazyVideos.length) return;
-  
+
   if ('IntersectionObserver' in window) {
     const videoObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const video = entry.target;
           const source = video.querySelector('source');
-          
+
           // Carregar o vídeo
           if (source?.dataset.src) {
             source.src = source.dataset.src;
             video.load();
-            
+
             // Reproduzir quando estiver pronto
             video.addEventListener('loadeddata', () => {
               video.play().catch(e => console.log('Video autoplay prevented:', e));
             }, { once: true });
-            
+
             video.classList.remove('lazy-video');
             observer.unobserve(video);
           }
@@ -1764,7 +1757,7 @@ function initLazyVideos() {
       rootMargin: '50px',
       threshold: 0.1
     });
-    
+
     lazyVideos.forEach(video => videoObserver.observe(video));
   } else {
     // Fallback para navegadores sem suporte a IntersectionObserver
@@ -1790,7 +1783,7 @@ function closeProject() {
   if (modal) {
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
-    
+
     // Parar todos os vídeos quando fechar o modal
     const videos = modal.querySelectorAll('video');
     videos.forEach(video => {
@@ -1844,7 +1837,7 @@ document.addEventListener('click', (e) => {
 document.addEventListener('click', (e) => {
   const link = e.target.closest('a');
   if (!link) return;
-  
+
   const href = link.getAttribute('href');
   // Permitir links com âncoras internas, externos ou com target blank
   if (!href || href.startsWith('#') || link.target === '_blank' || href.startsWith('http')) {
@@ -1865,17 +1858,110 @@ window.addEventListener('load', () => {
 const initDraggableIcon = () => {
   const img = document.getElementById('draggable');
   const canvas = document.getElementById('drawCanvas');
-  
+
   if (!img || !canvas) return;
-  
+
   const ctx = canvas.getContext('2d', { alpha: true });
 
-  // Ajusta tamanho do canvas
-  const resizeCanvas = () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  // ==========================================
+  // EFEITO DE PARTÍCULAS (TRAÇO ELEGANTE)
+  // ==========================================
+  const particlesCanvas = document.createElement('canvas');
+  particlesCanvas.id = 'particlesCanvas';
+  particlesCanvas.style.position = 'absolute';
+  particlesCanvas.style.top = '0';
+  particlesCanvas.style.left = '0';
+  particlesCanvas.style.pointerEvents = 'none'; // Não bloqueia os cliques/arrastes
+  particlesCanvas.style.zIndex = '2'; // Fica abaixo do ícone, mas acima do traço se necessário
+  canvas.parentNode.insertBefore(particlesCanvas, canvas.nextSibling);
+
+  const pCtx = particlesCanvas.getContext('2d', { alpha: true });
+  let particles = [];
+  let pRafId = null;
+
+  const updateParticles = () => {
+    pCtx.clearRect(0, 0, particlesCanvas.width, particlesCanvas.height);
+    let activeParticles = false;
+
+    for (let i = particles.length - 1; i >= 0; i--) {
+      let p = particles[i];
+      p.x += p.vx;
+      p.y += p.vy;
+      p.life -= p.decay;
+
+      if (p.life <= 0) {
+        particles.splice(i, 1);
+      } else {
+        activeParticles = true;
+        pCtx.beginPath();
+        pCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        // Cor igual à caneta, com opacidade variando pela vida da partícula
+        pCtx.fillStyle = `rgba(20, 20, 25, ${p.life * 0.6})`;
+        pCtx.fill();
+      }
+    }
+
+    if (activeParticles) {
+      pRafId = requestAnimationFrame(updateParticles);
+    } else {
+      pRafId = null;
+    }
   };
-  
+
+  const spawnParticles = (x, y) => {
+    // Spawna 1 ou 2 partículas super sutis por movimento para criar o efeito de poeira elegante
+    const count = Math.random() > 0.5 ? 1 : 2;
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: x,
+        y: y,
+        vx: (Math.random() - 0.5) * 1.5,
+        vy: (Math.random() - 0.5) * 1.5 - 0.5, // Leve tendência a subir
+        life: 1,
+        decay: Math.random() * 0.02 + 0.015,
+        size: Math.random() * 1.5 + 0.5
+      });
+    }
+
+    if (!pRafId) {
+      pRafId = requestAnimationFrame(updateParticles);
+    }
+  };
+
+  // Aplica o estilo premium e sofisticado da caneta
+  const applyPenStyle = () => {
+    ctx.strokeStyle = 'rgba(20, 20, 25, 0.85)'; // Cor escura e elegante, sem ser preta absoluta
+    ctx.lineWidth = 2.5; // Espessura balanceada, como uma caneta técnica
+    ctx.lineCap = 'round'; // Extremidades perfeitamente arredondadas
+    ctx.lineJoin = 'round'; // Curvas e transições extremamente suaves
+
+    // Leve brilho (glow) sutil para adicionar profundidade
+    ctx.shadowBlur = 6;
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.15)';
+  };
+
+  // Ajusta tamanho do canvas com suporte a telas de alta resolução (Retina/Antialiasing)
+  const resizeCanvas = () => {
+    const dpr = window.devicePixelRatio || 1;
+
+    // Redimensiona o canvas de desenho
+    canvas.width = window.innerWidth * dpr;
+    canvas.height = window.innerHeight * dpr;
+    canvas.style.width = `${window.innerWidth}px`;
+    canvas.style.height = `${window.innerHeight}px`;
+    ctx.scale(dpr, dpr);
+
+    // Redimensiona o canvas de partículas
+    particlesCanvas.width = window.innerWidth * dpr;
+    particlesCanvas.height = window.innerHeight * dpr;
+    particlesCanvas.style.width = `${window.innerWidth}px`;
+    particlesCanvas.style.height = `${window.innerHeight}px`;
+    pCtx.scale(dpr, dpr);
+
+    // Re-aplica os estilos após o redimensionamento (o contexto é resetado ao mudar width/height)
+    applyPenStyle();
+  };
+
   resizeCanvas();
   // O seu projeto já tem o debounce, então vai funcionar normal aqui
   window.addEventListener('resize', debounce(resizeCanvas, 200));
@@ -1884,10 +1970,10 @@ const initDraggableIcon = () => {
   // CENTRALIZAR O ÍCONE NO INÍCIO
   // ==========================================
   const centerIcon = () => {
-    img.style.position = 'absolute'; 
+    img.style.position = 'absolute';
     const centroX = (window.innerWidth / 2) - (img.offsetWidth / 2);
     const centroY = (window.innerHeight / 2) - (img.offsetHeight / 2);
-    
+
     img.style.left = `${centroX}px`;
     img.style.top = `${centroY}px`;
   };
@@ -1905,25 +1991,19 @@ const initDraggableIcon = () => {
   let offsetX, offsetY;
   let rafId = null;
   let currentX, currentY;
-  
+
   // VARIÁVEIS PARA A LINHA CONTÍNUA
   let lastDrawX = null;
   let lastDrawY = null;
-
-  // Configuração visual da "caneta"
-  ctx.strokeStyle = 'rgba(0, 0, 0, 0.6)'; // Cor e transparência
-  ctx.lineWidth = 1.5; // Grossura da linha
-  ctx.lineCap = 'round'; // Pontas arredondadas
-  ctx.lineJoin = 'round'; // Curvas suaves
 
   // Mouse/Touch down
   const handleStart = (e) => {
     e.preventDefault();
     isDragging = true;
-    
+
     const clientX = e.clientX || e.touches?.[0]?.clientX;
     const clientY = e.clientY || e.touches?.[0]?.clientY;
-    
+
     offsetX = clientX - img.offsetLeft;
     offsetY = clientY - img.offsetTop;
     img.style.cursor = 'grabbing';
@@ -1936,13 +2016,13 @@ const initDraggableIcon = () => {
   // Mouse/Touch move
   const handleMove = (e) => {
     if (!isDragging) return;
-    
+
     const clientX = e.clientX || e.touches?.[0]?.clientX;
     const clientY = e.clientY || e.touches?.[0]?.clientY;
-    
+
     currentX = clientX - offsetX;
     currentY = clientY - offsetY;
-    
+
     // Usar RAF para otimizar rendering
     if (!rafId) {
       rafId = requestAnimationFrame(() => {
@@ -1959,7 +2039,10 @@ const initDraggableIcon = () => {
         ctx.moveTo(lastDrawX, lastDrawY);
         ctx.lineTo(centerX, centerY);
         ctx.stroke();
-        
+
+        // Dispara as partículas no ponto atual
+        spawnParticles(centerX, centerY);
+
         // 4. Salva a posição atual para o próximo frame
         lastDrawX = centerX;
         lastDrawY = centerY;
@@ -1982,11 +2065,11 @@ const initDraggableIcon = () => {
   // Event listeners otimizados
   img.addEventListener('mousedown', handleStart);
   img.addEventListener('touchstart', handleStart, { passive: false });
-  
+
   // Capturando o movimento direto no documento para não perder o ícone
   document.addEventListener('mousemove', handleMove);
   document.addEventListener('touchmove', handleMove, { passive: false });
-  
+
   document.addEventListener('mouseup', handleEnd);
   document.addEventListener('touchend', handleEnd);
 };
@@ -2003,8 +2086,8 @@ if (document.readyState === 'loading') {
 // =============================================
 
 // Envolver todo o código em DOMContentLoaded para garantir que execute após carregar o DOM
-document.addEventListener('DOMContentLoaded', function() {
-  
+document.addEventListener('DOMContentLoaded', function () {
+
   // Cache de elementos do menu
   const menuElements = {
     toggle: document.getElementById('menuToggle'),
@@ -2021,7 +2104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menu?.classList.remove('active');
     overlay?.classList.remove('active');
     document.body.classList.remove('menu-open');
-    
+
     // Atualizar aria-expanded
     if (toggle) {
       toggle.setAttribute('aria-expanded', 'false');
@@ -2032,17 +2115,17 @@ document.addEventListener('DOMContentLoaded', function() {
   if (menuElements.toggle && menuElements.menu && menuElements.overlay) {
     // Cachear items do menu
     menuElements.items = Array.from(menuElements.menu.querySelectorAll('.nav-item'));
-    
+
     // Abrir/fechar menu
     menuElements.toggle.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      
+
       const isActive = menuElements.toggle.classList.toggle('active');
       menuElements.menu.classList.toggle('active', isActive);
       menuElements.overlay.classList.toggle('active', isActive);
       document.body.classList.toggle('menu-open', isActive);
-      
+
       // Atualizar aria-expanded
       menuElements.toggle.setAttribute('aria-expanded', isActive.toString());
     });
@@ -2069,27 +2152,27 @@ document.addEventListener('DOMContentLoaded', function() {
   if (menuElements.header) {
     let ticking = false;
     let lastScrollY = window.scrollY;
-    
+
     const updateHeader = () => {
       const scrollY = window.scrollY;
-      
+
       if (scrollY > 50) {
         menuElements.header.classList.add('scrolled');
       } else {
         menuElements.header.classList.remove('scrolled');
       }
-      
+
       lastScrollY = scrollY;
       ticking = false;
     };
-    
+
     window.addEventListener('scroll', () => {
       if (!ticking) {
         requestAnimationFrame(updateHeader);
         ticking = true;
       }
     }, { passive: true });
-    
+
     // Inicializar estado do header
     updateHeader();
   }
@@ -2098,23 +2181,23 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', (e) => {
     const anchor = e.target.closest('a[href^="#"]');
     if (!anchor) return;
-    
+
     const href = anchor.getAttribute('href');
     if (!href || href === '#' || href.length <= 1) return;
-    
+
     const target = document.querySelector(href);
     if (!target) return;
-    
+
     e.preventDefault();
     const headerHeight = menuElements.header?.offsetHeight || 70;
     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-    
+
     window.scrollTo({
       top: targetPosition,
       behavior: 'smooth'
     });
-  }); 
-  
+  });
+
   // Suporte de teclado para botão da equipe
   const teamButton = document.querySelector('.team-image-container[role="button"]');
   if (teamButton) {
@@ -2127,3 +2210,258 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 }); // Fim do DOMContentLoaded
+
+// =============================================
+// 3D HOVER EFFECT PARA OS CARDS (INDEX.HTML)
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  // Verifica se estamos na página index (onde existe o projects-grid)
+  const gridContainer = document.querySelector('.projects-grid');
+  if (!gridContainer) return;
+
+  const cards = document.querySelectorAll('.grid-item');
+
+  cards.forEach(card => {
+    let cardWidth = 0;
+    let cardHeight = 0;
+    let isHovered = false;
+
+    let currentRotateX = 0;
+    let currentRotateY = 0;
+    let targetRotateX = 0;
+    let targetRotateY = 0;
+
+    let currentScale = 1;
+    let targetScale = 1;
+    let rafId;
+
+    // Função de interpolação linear para animação suave
+    const lerp = (start, end, factor) => start + (end - start) * factor;
+
+    const updateTransform = () => {
+      currentRotateX = lerp(currentRotateX, targetRotateX, 0.1);
+      currentRotateY = lerp(currentRotateY, targetRotateY, 0.1);
+      currentScale = lerp(currentScale, targetScale, 0.1);
+
+      card.style.transform = `perspective(1000px) rotateX(${currentRotateX}deg) rotateY(${currentRotateY}deg) scale(${currentScale})`;
+
+      // Continua animando se estiver em hover ou se ainda não retornou completamente ao estado inicial
+      if (isHovered || Math.abs(currentRotateX) > 0.01 || Math.abs(currentRotateY) > 0.01 || Math.abs(currentScale - 1) > 0.001) {
+        rafId = requestAnimationFrame(updateTransform);
+      } else {
+        // Reseta exatamente para os valores iniciais para evitar sub-pixels flutuantes
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+        cancelAnimationFrame(rafId);
+      }
+    };
+
+    const onMouseEnter = () => {
+      isHovered = true;
+      cardWidth = card.offsetWidth;
+      cardHeight = card.offsetHeight;
+
+      // Remove transições CSS para não conflitar com o requestAnimationFrame (lerp)
+      card.style.transition = 'none';
+
+      // Escala levemente reduzida para não sobrepor outros cards vizinhos
+      targetScale = 0.95;
+
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(updateTransform);
+    };
+
+    const onMouseMove = (e) => {
+      if (!isHovered) return;
+
+      const rect = card.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+
+      let clientX = e.clientX;
+      let clientY = e.clientY;
+
+      if (e.touches && e.touches.length > 0) {
+        clientX = e.touches[0].clientX;
+        clientY = e.touches[0].clientY;
+      }
+
+      const deltaX = clientX - centerX;
+      const deltaY = clientY - centerY;
+
+      // Calcula a porcentagem do cursor em relação ao centro (-1 a 1)
+      let percentX = deltaX / (cardWidth / 2);
+      let percentY = deltaY / (cardHeight / 2);
+
+      percentX = Math.max(-1, Math.min(1, percentX));
+      percentY = Math.max(-1, Math.min(1, percentY));
+
+      const maxRotation = 12; // Intensidade da rotação (graus)
+
+      // Efeito premium de "pull" (o card levanta em direção ao cursor)
+      targetRotateX = percentY * maxRotation;
+      targetRotateY = -percentX * maxRotation;
+    };
+
+    const onMouseLeave = () => {
+      isHovered = false;
+      targetRotateX = 0;
+      targetRotateY = 0;
+      targetScale = 1;
+    };
+
+    card.addEventListener('mouseenter', onMouseEnter);
+    card.addEventListener('mousemove', onMouseMove);
+    card.addEventListener('mouseleave', onMouseLeave);
+
+    // Suporte para touchpads e dispositivos móveis
+    card.addEventListener('touchstart', (e) => {
+      onMouseEnter();
+      onMouseMove(e);
+    }, { passive: true });
+
+    card.addEventListener('touchmove', (e) => {
+      onMouseMove(e);
+    }, { passive: true });
+
+    card.addEventListener('touchend', onMouseLeave);
+    card.addEventListener('touchcancel', onMouseLeave);
+  });
+});
+
+// =============================================
+// CINEMATIC OPENING (GSAP)
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.getElementById('hero');
+  const img = document.getElementById('draggable');
+
+  // Apenas roda se GSAP estiver carregado e estivermos na página inicial (onde o #hero existe)
+  if (!hero || !img || typeof gsap === 'undefined') return;
+
+  // Verifica se a animação já foi executada nesta sessão (evita repetir ao recarregar a página)
+  if (sessionStorage.getItem('cinematicPlayed') === 'true') return;
+
+  // Eleva APENAS os elementos visuais (canvases e logo) para cima do overlay, 
+  // permitindo que o fundo do #hero seja corretamente escurecido.
+  const canvas = document.getElementById('drawCanvas');
+  const particlesCanvas = document.getElementById('particlesCanvas');
+  const dragContainer = document.querySelector('.drag-container');
+
+  const elevate = (el, z) => {
+    if (!el) return;
+    if (window.getComputedStyle(el).position === 'static') {
+      el.style.position = 'relative';
+    }
+    el.style.zIndex = z;
+  };
+
+  elevate(canvas, '9999');
+  elevate(particlesCanvas, '9999');
+  elevate(img, '10000'); // Eleva a própria imagem em vez do container para não quebrar a centralização
+
+  // Cria o overlay escuro
+  const overlay = document.createElement('div');
+  overlay.id = 'cinematic-overlay';
+  overlay.style.cssText = `
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    background: rgba(8, 8, 10, 0.95);
+    z-index: 9998; /* Fica abaixo do ícone mas acima do resto do site */
+    pointer-events: none;
+    backdrop-filter: brightness(0.2) saturate(0.2) blur(6px);
+    -webkit-backdrop-filter: brightness(0.2) saturate(0.2) blur(6px);
+  `;
+  document.body.appendChild(overlay);
+
+  // Trava a rolagem da página
+  document.body.style.overflow = 'hidden';
+
+  const animState = { size: 0, feather: 5 }; // Começa com um brilho super discreto ao redor da logo
+
+  // Atualiza a máscara para revelar o fundo
+  const applyMask = () => {
+    // "Buraco" transparente cresce a partir da posição da logo, revelando o site iluminado por baixo
+    const maskStr = `radial-gradient(circle at ${window.logoX}px ${window.logoY}px, transparent ${animState.size}vw, black calc(${animState.size}vw + ${animState.feather}vw))`;
+    overlay.style.webkitMaskImage = maskStr;
+    overlay.style.maskImage = maskStr;
+  };
+
+  const updateHolePosition = () => {
+    // Garante que o overlay cubra a página inteira de ponta a ponta
+    const docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    overlay.style.height = docHeight + 'px';
+    
+    const rect = img.getBoundingClientRect();
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Calcula a posição absoluta somando o scroll
+    window.logoX = rect.left + scrollLeft + rect.width / 2;
+    window.logoY = rect.top + scrollTop + rect.height / 2;
+    applyMask();
+  };
+
+  // Atualiza a posição inicial assim que a logo carregar
+  if (img.complete) {
+    updateHolePosition();
+  } else {
+    img.addEventListener('load', updateHolePosition, { once: true });
+  }
+
+  // Atualiza caso a tela mude de tamanho
+  window.addEventListener('resize', () => {
+    if (overlay.parentNode) updateHolePosition();
+  });
+
+  let cinematicStarted = false;
+
+  const startCinematic = () => {
+    if (cinematicStarted) return;
+    cinematicStarted = true;
+    
+    // Marca na sessão que a animação já foi vista, para não repetir ao navegar pelas páginas
+    sessionStorage.setItem('cinematicPlayed', 'true');
+
+    // Destrava a rolagem
+    document.body.style.overflow = '';
+    
+    updateHolePosition(); // Refresca a posição exata no momento do clique
+
+    // Timeline GSAP sincronizada e de alta performance
+    const tl = gsap.timeline({
+      onComplete: () => {
+        // Remove totalmente o overlay para garantir máxima performance após a animação (sem peso de filtros)
+        overlay.remove();
+        // Remove o glow do logo suavemente no final
+        gsap.to(img, { filter: 'drop-shadow(0px 0px 0px rgba(255,255,255,0)) brightness(1)', duration: 1.5, ease: 'power2.out' });
+      }
+    });
+
+    // 1. Logo "acende" emitindo glow instantaneamente
+    tl.to(img, {
+      filter: 'drop-shadow(0px 0px 35px rgba(255, 255, 255, 0.95)) brightness(1.3)',
+      duration: 1,
+      ease: 'power2.out'
+    });
+
+    // 2. A iluminação se espalha (o buraco na máscara cresce em raio)
+    tl.to(animState, {
+      size: 150, // Expande para cobrir a tela inteira (em vw para garantir que pega bordas)
+      feather: 60, // Borda bem suave durante a transição
+      duration: 3,
+      ease: 'power2.inOut',
+      onUpdate: applyMask
+    }, "-=0.6"); // Inicia enquanto o brilho do logo está atingindo o pico
+
+    // 3. Fade out do overlay inteiro garante sumiço perfeito sem artefatos
+    tl.to(overlay, {
+      opacity: 0,
+      duration: 1,
+      ease: 'power1.in'
+    }, "-=1.2");
+  };
+
+  // Inicia a animação de abertura sincronizada com o início do desenho
+  img.addEventListener('mousedown', startCinematic, { once: true });
+  img.addEventListener('touchstart', startCinematic, { once: true, passive: true });
+});
