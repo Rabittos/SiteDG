@@ -2309,22 +2309,13 @@ document.addEventListener('DOMContentLoaded', () => {
       targetScale = 1;
     };
 
-    card.addEventListener('mouseenter', onMouseEnter);
-    card.addEventListener('mousemove', onMouseMove);
-    card.addEventListener('mouseleave', onMouseLeave);
+    const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-    // Suporte para touchpads e dispositivos móveis
-    card.addEventListener('touchstart', (e) => {
-      onMouseEnter();
-      onMouseMove(e);
-    }, { passive: true });
-
-    card.addEventListener('touchmove', (e) => {
-      onMouseMove(e);
-    }, { passive: true });
-
-    card.addEventListener('touchend', onMouseLeave);
-    card.addEventListener('touchcancel', onMouseLeave);
+    if (isFinePointer) {
+      card.addEventListener('mouseenter', onMouseEnter);
+      card.addEventListener('mousemove', onMouseMove);
+      card.addEventListener('mouseleave', onMouseLeave);
+    }
   });
 });
 
@@ -2390,11 +2381,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Garante que o overlay cubra a página inteira de ponta a ponta
     const docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
     overlay.style.height = docHeight + 'px';
-    
+
     const rect = img.getBoundingClientRect();
     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
+
     // Calcula a posição absoluta somando o scroll
     window.logoX = rect.left + scrollLeft + rect.width / 2;
     window.logoY = rect.top + scrollTop + rect.height / 2;
@@ -2418,13 +2409,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const startCinematic = () => {
     if (cinematicStarted) return;
     cinematicStarted = true;
-    
+
     // Marca na sessão que a animação já foi vista, para não repetir ao navegar pelas páginas
     sessionStorage.setItem('cinematicPlayed', 'true');
 
     // Destrava a rolagem
     document.body.style.overflow = '';
-    
+
     updateHolePosition(); // Refresca a posição exata no momento do clique
 
     // Timeline GSAP sincronizada e de alta performance
@@ -2464,4 +2455,38 @@ document.addEventListener('DOMContentLoaded', () => {
   // Inicia a animação de abertura sincronizada com o início do desenho
   img.addEventListener('mousedown', startCinematic, { once: true });
   img.addEventListener('touchstart', startCinematic, { once: true, passive: true });
+});
+
+// =============================================
+// VIDEO PERFORMANCE OPTIMIZATION
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('video[autoplay]');
+  if (videos.length === 0) return;
+
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        // Tenta iniciar a reprodução se estiver na tela
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(error => {
+            // Autoplay impedido pelo navegador, sem problemas
+            console.log("Autoplay impedido", error);
+          });
+        }
+      } else {
+        // Pausa para economizar bateria e processamento
+        video.pause();
+      }
+    });
+  }, {
+    rootMargin: '50px 0px',
+    threshold: 0.1
+  });
+
+  videos.forEach(video => {
+    videoObserver.observe(video);
+  });
 });
