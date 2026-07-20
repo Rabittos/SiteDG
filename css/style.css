@@ -11,28 +11,28 @@
   --color-background: #f8f8f8;
   --color-white: #ffffff;
   --color-black: #000000;
-  
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Playfair Display', serif;
-  
+
   /* Spacing */
   --spacing-xs: 8px;
   --spacing-sm: 20px;
   --spacing-md: 40px;
   --spacing-lg: 60px;
   --spacing-xl: 80px;
-  
+
   /* Transitions */
   --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
-  
+
   /* Header */
   --header-height: 70px;
   --header-height-mobile: 60px;
@@ -240,9 +240,17 @@ body {
   transform: translateX(0);
 }
 
-.nav-menu.active .nav-item:nth-child(1) { transition-delay: 0.05s; }
-.nav-menu.active .nav-item:nth-child(2) { transition-delay: 0.1s; }
-.nav-menu.active .nav-item:nth-child(3) { transition-delay: 0.15s; }
+.nav-menu.active .nav-item:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.nav-menu.active .nav-item:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.nav-menu.active .nav-item:nth-child(3) {
+  transition-delay: 0.15s;
+}
 
 .nav-item::before {
   content: '';
@@ -351,13 +359,17 @@ body {
 
 .hero-logo {
   position: absolute;
-  top: 50%;   /* centraliza verticalmente */
-  left: 50%;  /* centraliza horizontalmente */
-  transform: translate(-50%, -50%); /* ajuste fino para centralização */
+  top: 50%;
+  /* centraliza verticalmente */
+  left: 50%;
+  /* centraliza horizontalmente */
+  transform: translate(-50%, -50%);
+  /* ajuste fino para centralização */
 }
 
 .logo-img {
-  width: 600px; /* ajuste o tamanho da logo */
+  width: 600px;
+  /* ajuste o tamanho da logo */
   height: auto;
 }
 
@@ -367,6 +379,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -374,13 +387,25 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(20px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes counterPop {
@@ -388,7 +413,11 @@ body {
     transform: scale(0.8);
     opacity: 0.5;
   }
-  50% { transform: scale(1.1); }
+
+  50% {
+    transform: scale(1.1);
+  }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -396,8 +425,13 @@ body {
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeUp {
@@ -405,6 +439,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -461,6 +496,7 @@ section:nth-child(3n+2) {
   background: var(--color-white);
   aspect-ratio: 3 / 4;
   will-change: transform;
+  transform: translateZ(0);
 }
 
 .grid-image {
@@ -471,7 +507,8 @@ section:nth-child(3n+2) {
 }
 
 .grid-image img {
-  transform: scale(1.15); /* Margem para Parallax */
+  transform: scale(1.15) translateZ(0);
+  /* Margem para Parallax */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -509,7 +546,8 @@ section:nth-child(3n+2) {
 }
 
 .grid-item:hover .grid-image img {
-  transform: scale(1.15); /* Margem para Parallax */
+  transform: scale(1.15);
+  /* Margem para Parallax */
 }
 
 .grid-item:hover .grid-overlay {
@@ -622,6 +660,7 @@ section:nth-child(3n+2) {
     transform: translateY(-50%) translateY(-30px);
     opacity: 0;
   }
+
   to {
     transform: translateY(-50%) translateY(0);
     opacity: 1;
@@ -703,7 +742,8 @@ section:nth-child(3n+2) {
 }
 
 .project-city {
-  text-align: center; /* Isso agora vai alinhar com a descrição abaixo */
+  text-align: center;
+  /* Isso agora vai alinhar com a descrição abaixo */
 }
 
 
@@ -712,6 +752,7 @@ section:nth-child(3n+2) {
   padding-bottom: 12px;
   background-color: var(--color-white);
 }
+
 @media (max-width: 768px) {
   .project-header {
     grid-template-columns: 1fr;
@@ -757,19 +798,19 @@ section:nth-child(3n+2) {
 .project-description {
   text-align: center;
   width: 100%;
-  
+
   /* Aumente este valor negativo para subir mais (ex: -30px, -40px) */
-  margin-top: -35px !important; 
-  
+  margin-top: -35px !important;
+
   /* Espaço para não colar nas fotos de baixo */
-  margin-bottom: 20px !important; 
-  
+  margin-bottom: 20px !important;
+
   padding: 0 20px;
   font-size: 15px;
   color: #2f2f2f;
-  
+
   /* Line-height corrigido (nunca use valor negativo aqui) */
-  line-height: 7; 
+  line-height: 7;
 }
 
 .project-meta {
@@ -782,11 +823,11 @@ section:nth-child(3n+2) {
 /* Category grid */
 .category-grid {
   /* Ordem: Cima (0), Lados (var), Baixo (var) */
-  padding: 0 var(--spacing-md) var(--spacing-md); 
+  padding: 0 var(--spacing-md) var(--spacing-md);
   background-color: var(--color-white);
-  
+
   /* Garante que não haja margem externa empurrando também */
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .category-container {
@@ -1107,7 +1148,7 @@ section:nth-child(3n+2) {
     margin-bottom: var(--spacing-md) !important;
   }
 
-  .team-contact-section > div {
+  .team-contact-section>div {
     gap: var(--spacing-lg) !important;
   }
 }
@@ -1149,39 +1190,44 @@ section:nth-child(3n+2) {
 
 /* 1. Remove o espaço gigante que o AOS cria no topo ao animar */
 [data-aos] {
-    transition-property: transform, opacity !important;
+  transition-property: transform, opacity !important;
 }
 
 /* 2. Zera tudo entre o Header e o Conteúdo */
 .main-header {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* 3. "Esmaga" a seção de texto */
 .project-detail-section {
-    padding-top: 10px !important;    /* Quase encosta no menu */
-    padding-bottom: 0 !important;   /* Zera o espaço embaixo do texto */
-    margin-bottom: -15px !important; /* Margem negativa para "puxar" as fotos para cima */
+  padding-top: 10px !important;
+  /* Quase encosta no menu */
+  padding-bottom: 0 !important;
+  /* Zera o espaço embaixo do texto */
+  margin-bottom: -15px !important;
+  /* Margem negativa para "puxar" as fotos para cima */
 }
 
 /* 4. Tira o respiro natural das fontes */
 .project-detail-header h1 {
-    line-height: 1 !important;
+  line-height: 1 !important;
 }
 
 .project-location {
-    margin: 5px 0 0 0 !important; /* Espaço mínimo entre nome e local */
-    line-height: 1 !important;
+  margin: 5px 0 0 0 !important;
+  /* Espaço mínimo entre nome e local */
+  line-height: 1 !important;
 }
 
 /* 5. Zera a Galeria */
 .project-gallery-full {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .gallery-grid-full {
-    gap: 10px !important; /* Espaço entre as fotos da galeria */
+  gap: 10px !important;
+  /* Espaço entre as fotos da galeria */
 }
 
 .project-detail-section {
@@ -1336,13 +1382,15 @@ section:nth-child(3n+2) {
 /* Responsividade */
 @media (max-width: 1024px) {
   .gallery-grid-full {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
   }
 }
 
 @media (max-width: 600px) {
   .gallery-grid-full {
-    grid-template-columns: 1fr; /* 1 coluna */
+    grid-template-columns: 1fr;
+    /* 1 coluna */
   }
 }
 
@@ -1350,7 +1398,8 @@ section:nth-child(3n+2) {
 .other-categories-section {
   padding: 30px 16px 20px;
   background-color: var(--color-white);
-  margin-top: -18px; /* levanta a área dos cards para ficar mais junto */
+  margin-top: -18px;
+  /* levanta a área dos cards para ficar mais junto */
 }
 
 .other-categories-section h3 {
@@ -1366,7 +1415,8 @@ section:nth-child(3n+2) {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-sm); /* cards mais próximos */
+  gap: var(--spacing-sm);
+  /* cards mais próximos */
 }
 
 .other-category-card {
@@ -1491,22 +1541,22 @@ section:nth-child(3n+2) {
     font-size: 28px !important;
   }
 
-  .team-contact-section > div {
+  .team-contact-section>div {
     gap: 50px !important;
     padding: 0 var(--spacing-sm);
   }
 
-  .team-contact-section a > div {
+  .team-contact-section a>div {
     width: 60px !important;
     height: 60px !important;
   }
 
-  .team-contact-section a > div svg {
+  .team-contact-section a>div svg {
     width: 30px !important;
     height: 30px !important;
   }
 
-  .team-contact-section a > p {
+  .team-contact-section a>p {
     font-size: 12px !important;
   }
 }
@@ -1548,19 +1598,28 @@ body.menu-open {
    ============================================================ */
 /* Isso só se aplica a telas de celular (menores que 768px) */
 @media (max-width: 768px) {
+
   /* 1. Ajuste do Container (.gallery-item) */
   #projectContainer .gallery-grid-full .gallery-item {
-    height: auto !important; /* Solta a altura forçada do desktop */
-    aspect-ratio: auto !important; /* Remove proporção quadrada */
-    background-color: transparent !important; /* Fundo transparente */
-    box-shadow: none !important; /* Remove sombras do container */
-    border: none !important; /* Remove bordas do container */
-    padding: 0 !important; /* Remove paddings internos */
-    margin-bottom: 20px !important; /* Espaço entre os itens da galeria */
-    overflow: hidden; /* Garante que nada vaze */
-    
+    height: auto !important;
+    /* Solta a altura forçada do desktop */
+    aspect-ratio: auto !important;
+    /* Remove proporção quadrada */
+    background-color: transparent !important;
+    /* Fundo transparente */
+    box-shadow: none !important;
+    /* Remove sombras do container */
+    border: none !important;
+    /* Remove bordas do container */
+    padding: 0 !important;
+    /* Remove paddings internos */
+    margin-bottom: 20px !important;
+    /* Espaço entre os itens da galeria */
+    overflow: hidden;
+    /* Garante que nada vaze */
+
     /* REMOVE o border-radius do container para evitar conflitos */
-    border-radius: 0 !important; 
+    border-radius: 0 !important;
   }
 
   /* 2. Aplicação das Bordas Arredondadas diretamente na Mídia (img/video) */
@@ -1568,17 +1627,19 @@ body.menu-open {
   #projectContainer .gallery-grid-full .gallery-item video {
     display: block;
     width: 100% !important;
-    height: auto !important; /* Altura automática para não cortar */
-    object-fit: contain !important; /* Mostra o projeto inteiro */
-    margin: 0 auto !important; /* Centraliza */
-    
-    /* A MÁGICA: Aplica o arredondamento diretamente na imagem/vídeo */
-    border-radius: 12px !important; /* Ajuste o valor (12px) para o desejado */
-    
+    height: auto !important;
+    /* Altura automática para não cortar */
+    object-fit: contain !important;
+    /* Mostra o projeto inteiro */
+    margin: 0 auto !important;
+    /* Centraliza */
+
+    /* Aplica o arredondamento diretamente na imagem/vídeo */
+    border-radius: 12px !important;
+    /* Ajuste o valor (12px) para o desejado */
+
     /* Adiciona sombra suave diretamente na mídia para manter o efeito visual */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+
 }
-
-
-
-
