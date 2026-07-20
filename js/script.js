@@ -2490,3 +2490,4 @@ document.addEventListener('DOMContentLoaded', () => {
     videoObserver.observe(video);
   });
 });
+
