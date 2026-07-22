@@ -2367,7 +2367,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Trava a rolagem da página
   document.body.style.overflow = 'hidden';
 
-  const animState = { size: 0, feather: 5 }; // Começa com um brilho super discreto ao redor da logo
+  const isMobile = window.innerWidth <= 768;
+  const animState = { size: isMobile ? 15 : 0, feather: isMobile ? 30 : 5 }; // Brilho ajustado para o celular
 
   // Atualiza a máscara para revelar o fundo
   const applyMask = () => {

@@ -799,8 +799,8 @@ section:nth-child(3n+2) {
   text-align: center;
   width: 100%;
 
-  /* Aumente este valor negativo para subir mais (ex: -30px, -40px) */
-  margin-top: -35px !important;
+  /* Ajuste de espaçamento superior */
+  margin-top: 15px;
 
   /* Espaço para não colar nas fotos de baixo */
   margin-bottom: 20px !important;
@@ -809,8 +809,8 @@ section:nth-child(3n+2) {
   font-size: 15px;
   color: #2f2f2f;
 
-  /* Line-height corrigido (nunca use valor negativo aqui) */
-  line-height: 7;
+  /* Line-height corrigido */
+  line-height: 1.6;
 }
 
 .project-meta {
